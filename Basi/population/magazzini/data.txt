@@ -1,0 +1,22 @@
+ITALY, Venezia, 30122, Castello 5490
+ITALY, Mestre, 30174, Piazza Erminio Ferretto 13
+ITALY, Padova, 35122, Via VIII Febbraio 15
+ITALY, Milano, 20121, Corso Vittorio Emanuele II 12
+ITALY, Roma, 00187, Via Flavia 2
+ITALY, Firenze, 50144, Piazza di S. Jacopino 30
+ITALY, Torino, 10128, Corso Castelfidardo 7
+FRANCE, Paris, 75002 , 24 Rue Saint-Augustin
+SPAIN, Madrid, 28004, Plaza de Carlos Cambronero 4
+GERMANY, Berlin, 10117, Franzosische Strasse 24
+PORTUGAL, Lisboa, 1150-175, R. Gomes Freire 60
+POLAND, Wroclaw, 50-113, OdrzaNska 17
+UK, Belfast, BT2 7BA, 46 Great Victoria St
+UK, London, W1S 2XG, 9 Conduit St
+USA, New York, MY 10016, 181 Lexington Ave
+USA, Miami Beach, FL 33139, 1427 West Ave
+USA, Long Beach, CA 90802, 435 Shoreline Village Drive
+USA, Houston, TX 77003, 1701 Webster St E2
+BULGARIA, Sofia, 1000 , ul. Hristo Belchev 42
+LITHUANIA, Vilnius, 01123, Pilies g. 16
+AUSTRIA, Wien, 1010, Herrengasse 14
+USA, Chicago, IL 60611, 730 N Rush St
