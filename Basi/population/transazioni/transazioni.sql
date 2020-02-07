@@ -1,236 +1,581 @@
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-14 06:38:10", 1, 'E', -772, 231)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-02-08 10:30:28", 1, "2017-07-14 06:38:10", 1)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-02 05:48:06", 1, 'E', -1043, 312)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-08-24 23:29:07", 1, "2018-03-02 05:48:06", 1)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-22 12:35:55", 1, 'E', -841, 252)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-10-23 09:39:13", 1, "2019-10-22 12:35:55", 1)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-09 18:15:11", 1, 'E', -580, 174)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-02-04 08:43:52", 1, "2019-01-09 18:15:11", 1)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-06 03:02:17", 1, 'E', -1692, 507)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-07-28 08:36:34", 1, "2019-11-06 03:02:17", 1)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-23 12:40:26", 2, 'E', -2294, 688)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-04-26 12:46:34", 2, "2019-06-23 12:40:26", 2)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-13 10:07:15", 2, 'E', -881, 264)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-01-12 09:29:18", 2, "2019-08-13 10:07:15", 2)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-22 15:12:08", 2, 'E', -1798, 539)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-06-01 21:18:51", 2, "2019-09-22 15:12:08", 2)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-23 16:02:29", 2, 'E', -893, 267)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-10-24 18:36:15", 2, "2019-12-23 16:02:29", 2)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-11 10:42:11", 2, 'E', -731, 219)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-07-14 15:25:52", 2, "2019-12-11 10:42:11", 2)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-19 23:11:21", 2, 'E', -1715, 514)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-08-27 22:18:15", 2, "2019-12-19 23:11:21", 2)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-04 01:38:57", 2, 'E', -167, 50)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-11-03 23:52:02", 2, "2019-11-04 01:38:57", 2)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-21 19:19:23", 2, 'E', -535, 160)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-12-05 08:11:07", 2, "2019-12-21 19:19:23", 2)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-22 06:30:20", 3, 'E', -127, 38)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-10-10 10:53:17", 3, "2019-10-22 06:30:20", 3)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-02 06:16:38", 3, 'E', -770, 231)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-11-07 09:38:55", 3, "2019-07-02 06:16:38", 3)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-23 18:48:37", 3, 'E', -1449, 434)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-11-14 22:34:29", 3, "2019-12-23 18:48:37", 3)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-13 10:56:24", 4, 'E', -216, 64)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-03-07 19:12:51", 4, "2018-01-13 10:56:24", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-19 15:47:58", 4, 'E', -305, 91)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-04-12 03:01:43", 4, "2018-02-19 15:47:58", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-21 06:14:49", 4, 'E', -135, 40)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-09-18 08:02:43", 4, "2018-04-21 06:14:49", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-05 08:20:33", 4, 'E', -1071, 321)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-05-27 08:38:28", 4, "2019-07-05 08:20:33", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-27 23:48:03", 4, 'E', -419, 125)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-11-14 17:23:32", 4, "2019-06-27 23:48:03", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-17 22:18:30", 4, 'E', -336, 100)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-11-28 13:23:04", 4, "2019-09-17 22:18:30", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-17 05:42:14", 4, 'E', -99, 29)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-12-02 02:47:24", 4, "2019-08-17 05:42:14", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-17 05:59:18", 4, 'E', -117, 35)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-12-21 13:37:13", 4, "2019-12-17 05:59:18", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-14 20:36:49", 4, 'E', -1765, 529)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-09-20 08:43:02", 4, "2019-10-14 20:36:49", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-20 01:55:51", 4, 'E', -743, 222)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-12-19 17:11:48", 4, "2019-12-20 01:55:51", 4)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-09 15:23:30", 5, 'E', -285, 85)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-11-15 03:21:35", 5, "2019-01-09 15:23:30", 5)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-13 20:02:51", 5, 'E', -1073, 321)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-11-16 09:27:48", 5, "2019-05-13 20:02:51", 5)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-28 16:36:29", 5, 'E', -512, 153)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-04-25 18:33:47", 5, "2019-07-28 16:36:29", 5)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-12 13:57:26", 5, 'E', -600, 180)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-10-17 13:53:40", 5, "2019-11-12 13:57:26", 5)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-11 01:13:50", 6, 'E', -660, 198)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-03-09 18:48:38", 6, "2019-10-11 01:13:50", 6)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-20 22:17:30", 6, 'E', -937, 281)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-12-27 06:19:51", 6, "2019-11-20 22:17:30", 6)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-15 14:51:26", 6, 'E', -641, 192)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-01-24 02:28:17", 6, "2019-12-15 14:51:26", 6)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-21 12:01:52", 6, 'E', -144, 43)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-02-17 17:10:42", 6, "2019-12-21 12:01:52", 6)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-21 13:58:08", 7, 'E', -301, 90)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-02-01 14:08:33", 7, "2019-07-21 13:58:08", 7)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-14 14:13:14", 7, 'E', -88, 26)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-08-24 22:05:13", 7, "2017-09-14 14:13:14", 7)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-27 08:14:03", 7, 'E', -1738, 521)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-12-09 13:21:31", 7, "2019-07-27 08:14:03", 7)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-16 09:35:32", 7, 'E', -1510, 453)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-04-20 23:03:31", 7, "2019-12-16 09:35:32", 7)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-27 07:03:57", 7, 'E', -1566, 469)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-08-14 15:40:41", 7, "2018-12-27 07:03:57", 7)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-16 14:58:56", 7, 'E', -642, 192)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-12-14 07:34:27", 7, "2019-12-16 14:58:56", 7)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-16 20:41:52", 8, 'E', -168, 50)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-03-20 11:41:02", 8, "2017-12-16 20:41:52", 8)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-12 06:05:30", 8, 'E', -676, 202)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-01-20 02:34:33", 8, "2018-02-12 06:05:30", 8)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-07 01:49:20", 8, 'E', -1402, 420)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-04-04 10:41:54", 8, "2018-09-07 01:49:20", 8)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-14 15:38:28", 8, 'E', -2393, 717)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-05-27 18:46:06", 8, "2019-08-14 15:38:28", 8)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-03 22:50:51", 8, 'E', -619, 185)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-09-26 15:03:37", 8, "2019-11-03 22:50:51", 8)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-26 08:47:42", 8, 'E', -489, 146)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-12-19 11:09:06", 8, "2019-02-26 08:47:42", 8)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-15 07:43:15", 8, 'E', -375, 112)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-02-13 01:26:27", 8, "2019-06-15 07:43:15", 8)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-25 12:26:34", 8, 'E', -364, 109)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-12-14 17:04:17", 8, "2019-12-25 12:26:34", 8)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-28 14:48:09", 8, 'E', -495, 148)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-12-27 12:44:18", 8, "2019-12-28 14:48:09", 8)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-15 05:32:58", 9, 'E', -1088, 326)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-05-26 01:46:17", 9, "2017-12-15 05:32:58", 9)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-02 06:06:19", 9, 'E', -115, 34)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-10-23 12:55:01", 9, "2017-11-02 06:06:19", 9)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-14 17:37:45", 9, 'E', -2030, 609)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-01-20 10:11:11", 9, "2018-11-14 17:37:45", 9)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-26 07:24:06", 9, 'E', -1029, 308)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-08-06 04:04:02", 9, "2019-09-26 07:24:06", 9)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-01 16:20:05", 9, 'E', -141, 42)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-08-21 21:14:42", 9, "2019-12-01 16:20:05", 9)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-21 02:36:30", 10, 'E', -1931, 579)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-01-24 19:13:33", 10, "2017-06-21 02:36:30", 10)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-02 19:08:48", 10, 'E', -67, 20)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-07-11 20:15:58", 10, "2019-07-02 19:08:48", 10)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-18 16:57:05", 10, 'E', -318, 95)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-08-23 13:32:55", 10, "2019-07-18 16:57:05", 10)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-20 23:05:46", 10, 'E', -324, 97)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-12-09 04:36:02", 10, "2018-07-20 23:05:46", 10)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-25 06:24:18", 10, 'E', -391, 117)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-04-06 14:05:01", 10, "2019-08-25 06:24:18", 10)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-16 12:57:13", 10, 'E', -490, 147)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-04-28 16:47:26", 10, "2019-05-16 12:57:13", 10)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-24 16:59:53", 11, 'E', -578, 173)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-07-19 10:26:09", 11, "2018-06-24 16:59:53", 11)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-04 01:08:55", 11, 'E', -527, 158)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-08-25 10:45:53", 11, "2018-06-04 01:08:55", 11)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-11 10:51:51", 11, 'E', -377, 113)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-01-23 16:03:07", 11, "2018-09-11 10:51:51", 11)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-11 04:12:20", 11, 'E', -102, 30)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-09-12 10:46:30", 11, "2019-09-11 04:12:20", 11)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-27 11:38:01", 11, 'E', -136, 40)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-12-13 18:21:38", 11, "2019-12-27 11:38:01", 11)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-03 18:53:25", 12, 'E', -622, 186)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-06-08 01:12:57", 12, "2019-08-03 18:53:25", 12)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-01 07:56:06", 12, 'E', -632, 189)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-11-08 03:43:29", 12, "2019-12-01 07:56:06", 12)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-04 06:55:38", 13, 'E', -1284, 385)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-05-13 05:57:24", 13, "2018-08-04 06:55:38", 13)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-12 09:16:12", 13, 'E', -985, 295)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-07-21 10:27:48", 13, "2019-06-12 09:16:12", 13)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-20 06:12:01", 13, 'E', -870, 261)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-11-19 14:08:51", 13, "2019-01-20 06:12:01", 13)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-10 07:52:36", 13, 'E', -447, 134)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-02-25 04:51:13", 13, "2019-02-10 07:52:36", 13)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-18 19:54:48", 13, 'E', -300, 90)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-05-16 02:09:20", 13, "2019-04-18 19:54:48", 13)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-01 12:25:10", 14, 'E', -871, 261)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-07-26 19:26:52", 14, "2019-02-01 12:25:10", 14)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-10 08:15:57", 14, 'E', -680, 204)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-08-26 11:42:37", 14, "2019-08-10 08:15:57", 14)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-20 09:07:16", 14, 'E', -1114, 334)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-11-12 05:31:57", 14, "2018-12-20 09:07:16", 14)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-12 08:29:57", 14, 'E', -464, 139)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-01-11 22:17:29", 14, "2019-06-12 08:29:57", 14)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-21 23:24:47", 14, 'E', -584, 175)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-02-06 18:08:12", 14, "2019-04-21 23:24:47", 14)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-12 03:51:36", 15, 'E', -1043, 312)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-02-25 03:53:35", 15, "2018-04-12 03:51:36", 15)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-10 20:25:41", 15, 'E', -384, 115)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-12-28 10:32:18", 15, "2019-07-10 20:25:41", 15)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-20 20:04:14", 15, 'E', -432, 129)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-01-03 08:35:05", 15, "2019-03-20 20:04:14", 15)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-02 04:19:59", 15, 'E', -657, 197)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-02-03 06:35:42", 15, "2019-04-02 04:19:59", 15)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-06 02:59:42", 15, 'E', -911, 273)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-09-15 23:28:34", 15, "2019-11-06 02:59:42", 15)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-02 22:10:03", 15, 'E', -752, 225)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-11-12 16:47:36", 15, "2019-12-02 22:10:03", 15)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-24 16:02:57", 16, 'E', -128, 38)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-01-20 18:44:08", 16, "2018-08-24 16:02:57", 16)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-10 21:22:35", 16, 'E', -115, 34)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-06-08 12:43:35", 16, "2018-03-10 21:22:35", 16)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-24 02:40:29", 16, 'E', -667, 200)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-06-06 22:55:58", 16, "2018-12-24 02:40:29", 16)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-17 23:14:56", 16, 'E', -538, 161)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-03-04 15:52:11", 16, "2019-04-17 23:14:56", 16)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-10 07:38:28", 17, 'E', -285, 85)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-05-21 11:44:15", 17, "2019-12-10 07:38:28", 17)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-11 09:49:25", 17, 'E', -3042, 912)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-10-20 15:44:24", 17, "2019-02-11 09:49:25", 17)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-17 19:44:22", 17, 'E', -904, 271)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-01-04 23:48:09", 17, "2019-04-17 19:44:22", 17)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-28 03:43:27", 17, 'E', -4842, 1452)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-08-25 21:54:23", 17, "2019-09-28 03:43:27", 17)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-06 08:57:50", 17, 'E', -283, 84)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-01-18 03:19:34", 17, "2019-08-06 08:57:50", 17)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-10 07:32:57", 17, 'E', -946, 283)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-09-10 04:22:56", 17, "2019-09-10 07:32:57", 17)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-16 20:14:28", 17, 'E', -529, 158)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-09-14 03:59:32", 17, "2019-11-16 20:14:28", 17)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-24 20:09:13", 18, 'E', -130, 39)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-09-15 04:12:44", 18, "2019-09-24 20:09:13", 18)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-20 12:45:22", 18, 'E', -136, 40)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-02-02 15:48:32", 18, "2018-07-20 12:45:22", 18)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-04 20:44:18", 18, 'E', -422, 126)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-03-13 02:01:31", 18, "2018-04-04 20:44:18", 18)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-27 23:05:18", 18, 'E', -840, 252)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-02-28 07:23:42", 18, "2019-03-27 23:05:18", 18)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-05 02:41:58", 18, 'E', -1020, 306)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-07-22 05:07:30", 18, "2019-12-05 02:41:58", 18)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-05 19:24:05", 18, 'E', -138, 41)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-09-15 12:59:58", 18, "2019-11-05 19:24:05", 18)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-04 22:51:28", 19, 'E', -1869, 560)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-06-10 17:15:40", 19, "2018-08-04 22:51:28", 19)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-18 15:17:45", 19, 'E', -2217, 665)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-10-16 17:45:50", 19, "2018-05-18 15:17:45", 19)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-10 16:13:41", 19, 'E', -218, 65)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-01-12 12:54:39", 19, "2019-08-10 16:13:41", 19)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-04 17:25:17", 19, 'E', -924, 277)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-01-26 16:56:44", 19, "2018-12-04 17:25:17", 19)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-12 01:23:50", 19, 'E', -456, 136)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-06-28 14:45:35", 19, "2018-11-12 01:23:50", 19)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-10 01:12:54", 19, 'E', -450, 135)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-11-19 03:03:06", 19, "2019-12-10 01:12:54", 19)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-05 23:42:40", 20, 'E', -1766, 529)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-06-09 07:16:32", 20, "2019-01-05 23:42:40", 20)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-01 07:35:34", 20, 'E', -106, 31)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-11-10 12:45:17", 20, "2018-06-01 07:35:34", 20)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-05 03:57:42", 20, 'E', -663, 198)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-11-18 18:53:29", 20, "2019-08-05 03:57:42", 20)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-24 14:57:03", 20, 'E', -381, 114)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-01-25 07:17:04", 20, "2019-02-24 14:57:03", 20)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-05 19:30:34", 20, 'E', -336, 100)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-04-20 08:21:51", 20, "2019-02-05 19:30:34", 20)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-17 22:56:15", 20, 'E', -1029, 308)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-05-18 19:58:37", 20, "2018-09-17 22:56:15", 20)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-25 23:39:37", 20, 'E', -500, 150)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-10-09 23:45:52", 20, "2019-04-25 23:39:37", 20)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-01 01:05:19", 20, 'E', -865, 259)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2018-11-26 08:58:40", 20, "2019-11-01 01:05:19", 20)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-12 08:46:08", 21, 'E', -1714, 514)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-03-21 07:43:53", 21, "2018-11-12 08:46:08", 21)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-02 15:39:21", 21, 'E', -446, 133)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2017-10-03 15:05:59", 21, "2018-01-02 15:39:21", 21)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-25 16:23:03", 21, 'E', -2072, 621)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-04-04 15:44:51", 21, "2019-07-25 16:23:03", 21)
-insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-18 10:34:45", 21, 'E', -666, 199)
-insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values("2019-06-24 16:04:56", 21, "2019-07-18 10:34:45", 21)
+
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-05 08:51:52", 7, 'R', 425, 127);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-28 22:35:58", 8, 'R', 354, 106);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-25 01:27:04", 7, 'R', 986, 295);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-17 02:54:55", 8, 'R', 217, 65);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-15 07:34:25", 6, 'R', 33, 9);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-21 08:10:26", 7, 'R', 611, 183);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-10-01 09:22:02", 17, 'R', 949, 284);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-10 03:32:47", 10, 'R', 178, 53);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-21 11:43:38", 9, 'R', 229, 68);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-01 16:10:06", 10, 'R', 657, 197);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-22 03:58:32", 21, 'R', 446, 133);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-03 22:35:40", 8, 'R', 593, 177);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-09 04:24:01", 2, 'R', 132, 39);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-04-12 06:20:40", 17, 'R', 625, 187);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-27 10:44:08", 4, 'R', 346, 103);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-15 22:35:28", 9, 'R', 435, 130);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-02 14:24:50", 16, 'R', 918, 275);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-01 10:52:57", 21, 'R', 56, 16);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-16 17:37:18", 8, 'R', 145, 43);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-07 10:31:18", 17, 'R', 415, 124);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-24 18:31:50", 10, 'R', 912, 273);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-25 06:04:06", 3, 'R', 915, 274);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-12 13:54:39", 1, 'R', 358, 107);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-10 21:25:56", 5, 'R', 480, 144);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-20 15:18:05", 19, 'R', 572, 171);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-04 04:08:19", 8, 'R', 40, 12);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-17 22:57:24", 20, 'R', 760, 228);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-24 19:21:11", 17, 'R', 49, 14);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-25 09:02:31", 6, 'R', 344, 103);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-07 01:09:40", 6, 'R', 622, 186);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-26 18:29:24", 16, 'R', 336, 100);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-27 19:35:30", 3, 'R', 52, 15);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-22 17:39:28", 9, 'R', 285, 85);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-23 07:10:46", 20, 'R', 50, 15);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-10 01:42:36", 9, 'R', 692, 207);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-04 17:23:47", 21, 'R', 522, 156);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-02 02:32:51", 16, 'R', 900, 270);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-10 04:39:47", 11, 'R', 51, 15);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-25 09:03:46", 1, 'R', 261, 78);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-07 05:46:12", 16, 'R', 891, 267);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-28 05:32:19", 13, 'R', 897, 269);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-19 11:21:53", 3, 'R', 954, 286);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-04 18:21:03", 20, 'R', 595, 178);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-14 20:12:50", 20, 'R', 929, 278);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-25 22:29:14", 20, 'R', 469, 140);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-26 09:19:58", 14, 'R', 600, 180);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-05 01:51:20", 13, 'R', 56, 16);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-23 17:52:41", 2, 'R', 471, 141);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-21 10:54:50", 10, 'R', 979, 293);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-02 17:57:33", 13, 'R', 697, 209);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-01 15:50:04", 21, 'R', 777, 233);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-15 18:29:18", 13, 'R', 626, 187);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-11 12:18:39", 14, 'R', 948, 284);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-24 19:23:14", 2, 'R', 336, 100);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-26 21:20:25", 2, 'R', 302, 90);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-07 12:20:42", 15, 'R', 47, 14);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-12 08:11:19", 8, 'R', 433, 129);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-03 12:37:34", 8, 'R', 625, 187);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-15 17:07:15", 7, 'R', 892, 267);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-10-16 03:10:53", 11, 'R', 46, 13);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-03 10:18:04", 12, 'R', 129, 38);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-10 19:32:08", 10, 'R', 734, 220);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-12 04:11:12", 16, 'R', 338, 101);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-11 08:17:14", 2, 'R', 525, 157);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-25 01:07:57", 16, 'R', 854, 256);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-28 19:57:03", 21, 'R', 679, 203);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-14 02:04:19", 21, 'R', 188, 56);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-17 01:04:39", 13, 'R', 106, 31);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-16 23:52:45", 1, 'R', 296, 88);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-04 01:06:08", 7, 'R', 775, 232);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-08 10:45:25", 11, 'R', 926, 277);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-10 06:32:43", 13, 'R', 378, 113);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-24 20:59:58", 5, 'R', 582, 174);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-17 02:54:46", 6, 'R', 25, 7);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-12 21:07:37", 4, 'R', 177, 53);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-07 09:26:37", 17, 'R', 40, 12);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-28 17:51:08", 15, 'R', 211, 63);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-08 20:19:30", 1, 'R', 747, 224);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-06 09:53:38", 21, 'R', 612, 183);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-18 13:31:51", 20, 'R', 543, 162);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-17 13:49:25", 15, 'R', 504, 151);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-19 04:33:41", 21, 'R', 492, 147);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-25 11:34:59", 18, 'R', 498, 149);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-10-10 13:34:53", 4, 'R', 342, 102);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-22 18:16:50", 11, 'R', 825, 247);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-10 20:15:14", 6, 'R', 572, 171);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-25 12:10:16", 13, 'R', 185, 55);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-13 10:42:17", 3, 'R', 323, 96);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-14 13:54:44", 5, 'R', 955, 286);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-28 16:48:59", 7, 'R', 765, 229);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-07 19:45:06", 14, 'R', 789, 236);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-03 11:02:10", 19, 'R', 995, 298);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-24 12:56:28", 4, 'R', 612, 183);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-26 20:23:41", 16, 'R', 331, 99);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-17 04:34:51", 8, 'R', 683, 204);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-03 19:32:38", 17, 'R', 94, 28);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-16 23:18:12", 16, 'R', 576, 172);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-20 03:04:37", 9, 'R', 991, 297);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-21 01:11:14", 8, 'R', 206, 61);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-21 23:02:55", 5, 'R', 609, 182);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-03 01:54:04", 19, 'R', 241, 72);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-27 18:59:50", 1, 'R', 934, 280);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-02 20:28:51", 16, 'R', 547, 164);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-12 23:35:31", 5, 'R', 409, 122);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-11 02:01:40", 5, 'R', 677, 203);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-04-08 09:38:01", 9, 'R', 805, 241);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-25 08:01:17", 22, 'R', 509, 152);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-16 21:17:29", 13, 'R', 295, 88);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-10 18:32:45", 17, 'R', 394, 118);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-02 12:33:47", 14, 'R', 215, 64);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-22 21:16:41", 7, 'R', 323, 96);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-23 14:35:08", 18, 'R', 315, 94);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-20 23:32:38", 4, 'R', 16, 4);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-17 18:10:09", 4, 'R', 324, 97);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-20 02:59:11", 18, 'R', 254, 76);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-28 06:03:10", 5, 'R', 674, 202);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-15 13:34:26", 17, 'R', 997, 299);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-25 17:59:26", 16, 'R', 517, 155);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-11 11:54:37", 20, 'R', 877, 263);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-27 15:50:17", 6, 'R', 913, 273);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-26 09:23:26", 2, 'R', 874, 262);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-05 08:25:55", 7, 'R', 934, 280);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-07 06:30:06", 21, 'R', 656, 196);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-26 02:46:39", 15, 'R', 120, 36);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-13 18:02:56", 13, 'R', 442, 132);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-03 11:59:20", 21, 'R', 268, 80);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-24 11:25:40", 11, 'R', 812, 243);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-23 19:39:22", 7, 'R', 54, 16);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-22 20:54:09", 13, 'R', 479, 143);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-17 15:57:05", 2, 'R', 423, 126);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-24 11:37:36", 7, 'R', 559, 167);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-14 10:36:23", 8, 'R', 565, 169);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-22 16:45:20", 9, 'R', 682, 204);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-02 12:34:47", 21, 'R', 381, 114);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-24 09:36:37", 6, 'R', 533, 159);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-21 08:33:56", 20, 'R', 546, 163);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-22 23:13:06", 12, 'R', 459, 137);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-22 17:50:48", 7, 'R', 498, 149);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-01 04:14:46", 15, 'R', 886, 265);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-18 08:15:51", 18, 'R', 954, 286);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-10 23:22:10", 11, 'R', 655, 196);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-22 10:14:56", 18, 'R', 640, 192);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-28 06:41:28", 11, 'R', 907, 272);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-08 08:08:22", 5, 'R', 214, 64);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-14 20:18:27", 19, 'R', 307, 92);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-16 14:41:38", 9, 'R', 602, 180);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-04 01:50:04", 3, 'R', 607, 182);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-26 20:30:29", 7, 'R', 81, 24);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-24 19:58:23", 4, 'R', 835, 250);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-25 13:06:39", 9, 'R', 579, 173);
+
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-17 02:57:23", 4, 'F', 2187, 656);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-28 15:44:11", 8, 'F', 6732, 2019);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-19 03:12:49", 15, 'F', 6847, 2054);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-25 08:38:36", 6, 'F', 6968, 2090);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-04 21:49:59", 6, 'F', 2580, 774);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-16 09:52:16", 2, 'F', 2184, 655);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-16 03:38:29", 12, 'F', 1724, 517);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-01 08:01:27", 4, 'F', 5192, 1557);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-11 08:40:26", 14, 'F', 6028, 1808);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-23 21:55:42", 5, 'F', 7770, 2331);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-12 10:02:25", 11, 'F', 6076, 1822);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-14 19:36:26", 19, 'F', 6423, 1926);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-07 03:48:54", 3, 'F', 3359, 1007);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-06 11:05:28", 4, 'F', 1192, 357);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-05 06:36:44", 10, 'F', 1786, 535);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-21 07:55:24", 13, 'F', 3894, 1168);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-11 02:15:34", 11, 'F', 5936, 1780);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-01 16:20:02", 19, 'F', 6035, 1810);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-06 11:31:55", 3, 'F', 5517, 1655);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-22 11:01:54", 2, 'F', 5364, 1609);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-26 04:40:07", 7, 'F', 1705, 511);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-18 08:30:52", 15, 'F', 1138, 341);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-25 16:32:37", 14, 'F', 1473, 441);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-07 08:56:09", 2, 'F', 1951, 585);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-20 12:24:39", 11, 'F', 4096, 1228);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-27 12:36:57", 11, 'F', 7054, 2116);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-16 15:14:35", 6, 'F', 6784, 2035);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-28 19:35:38", 17, 'F', 5899, 1769);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-13 23:07:31", 8, 'F', 5645, 1693);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-20 18:04:25", 21, 'F', 3262, 978);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-22 15:02:24", 12, 'F', 4719, 1415);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-10 13:22:11", 15, 'F', 2888, 866);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-15 06:33:45", 5, 'F', 2307, 692);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-25 07:39:40", 18, 'F', 860, 258);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-22 08:07:57", 16, 'F', 3890, 1167);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-10-24 18:40:16", 17, 'F', 2370, 711);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-09 06:45:58", 17, 'F', 7911, 2373);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-04 23:05:29", 10, 'F', 6184, 1855);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-11 17:36:55", 16, 'F', 5414, 1624);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-01 22:40:47", 6, 'F', 7633, 2289);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-22 05:51:04", 7, 'F', 811, 243);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-08 19:06:25", 3, 'F', 821, 246);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-05 21:08:41", 5, 'F', 5390, 1617);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-01 04:42:30", 5, 'F', 5937, 1781);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-02 15:33:41", 5, 'F', 2637, 791);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-16 18:12:55", 8, 'F', 1226, 367);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-10 23:16:52", 22, 'F', 4289, 1286);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-12 12:35:23", 10, 'F', 1232, 369);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-11 02:13:29", 10, 'F', 4198, 1259);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-20 17:03:47", 8, 'F', 2567, 770);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-10 15:58:50", 19, 'F', 2293, 687);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-14 11:42:28", 22, 'F', 6573, 1971);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-24 19:20:47", 8, 'F', 6119, 1835);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-16 09:58:37", 16, 'F', 3612, 1083);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-05 07:25:34", 8, 'F', 1133, 339);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-09 03:16:59", 11, 'F', 5126, 1537);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-04 06:01:32", 21, 'F', 5590, 1677);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-23 11:48:45", 3, 'F', 6411, 1923);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-05 14:26:19", 9, 'F', 5525, 1657);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-14 14:21:58", 19, 'F', 1262, 378);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-01 11:35:33", 3, 'F', 1051, 315);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-16 17:23:24", 12, 'F', 6521, 1956);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-25 20:03:22", 5, 'F', 6345, 1903);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-19 18:35:29", 17, 'F', 2224, 667);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-21 16:31:43", 11, 'F', 2000, 600);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-08 10:44:42", 5, 'F', 4413, 1323);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-11 06:54:02", 11, 'F', 3290, 987);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-21 06:21:16", 10, 'F', 2538, 761);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-04 01:53:46", 5, 'F', 7703, 2310);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-12 20:48:24", 22, 'F', 3283, 984);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-08 13:03:38", 22, 'F', 1901, 570);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-12 07:06:35", 13, 'F', 4390, 1317);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-21 12:51:55", 5, 'F', 7196, 2158);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-04 14:57:02", 17, 'F', 5929, 1778);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-10 13:10:31", 19, 'F', 727, 218);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-27 17:01:10", 11, 'F', 5982, 1794);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-19 21:19:23", 7, 'F', 5550, 1665);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-26 06:15:57", 16, 'F', 7714, 2314);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-01 22:05:40", 1, 'F', 7607, 2282);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-27 02:58:04", 14, 'F', 1399, 419);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-02 17:34:25", 12, 'F', 1539, 461);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-28 15:46:08", 17, 'F', 5287, 1586);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-26 20:49:42", 17, 'F', 1864, 559);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-14 21:32:20", 5, 'F', 6247, 1874);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-17 15:30:10", 2, 'F', 2464, 739);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-17 05:35:20", 13, 'F', 6612, 1983);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-16 15:58:53", 8, 'F', 456, 136);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-07 02:32:53", 14, 'F', 7511, 2253);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-20 16:58:13", 17, 'F', 3026, 907);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-04-06 15:02:11", 21, 'F', 972, 291);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-03 18:58:21", 4, 'F', 6123, 1836);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-13 09:22:04", 7, 'F', 7913, 2373);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-08 23:14:13", 11, 'F', 1649, 494);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-19 11:48:45", 19, 'F', 3773, 1131);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-09 18:03:17", 18, 'F', 6706, 2011);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-03 22:03:36", 10, 'F', 7239, 2171);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-21 20:50:24", 20, 'F', 431, 129);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-17 11:01:24", 8, 'F', 603, 180);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-23 09:07:05", 21, 'F', 6093, 1827);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-10 16:28:57", 22, 'F', 2901, 870);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-26 01:03:41", 4, 'F', 5540, 1662);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-05 13:25:04", 22, 'F', 7942, 2382);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-26 04:25:30", 10, 'F', 1217, 365);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-07 10:32:53", 20, 'F', 6622, 1986);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-20 10:23:48", 6, 'F', 3851, 1155);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-02 13:46:32", 17, 'F', 3927, 1178);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-07 15:13:14", 13, 'F', 4279, 1283);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-25 09:27:44", 21, 'F', 1240, 372);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-05 16:43:32", 12, 'F', 4575, 1372);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-08 13:02:40", 19, 'F', 717, 215);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-15 03:57:15", 7, 'F', 5304, 1591);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-22 21:09:45", 4, 'F', 2074, 622);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-13 11:54:18", 5, 'F', 5970, 1791);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-14 05:17:03", 11, 'F', 3833, 1149);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-15 10:27:32", 10, 'F', 3866, 1159);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-11 21:28:36", 14, 'F', 4502, 1350);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-09 08:33:52", 11, 'F', 2994, 898);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-25 05:22:13", 15, 'F', 3552, 1065);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-18 23:22:09", 14, 'F', 6836, 2050);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-11 16:59:19", 15, 'F', 1725, 517);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-09 06:39:36", 1, 'F', 5211, 1563);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-12 13:25:59", 7, 'F', 4554, 1366);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-03 23:37:16", 13, 'F', 4343, 1302);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-10-12 12:13:50", 12, 'F', 7822, 2346);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-23 22:17:30", 1, 'F', 1893, 567);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-02 15:17:57", 12, 'F', 2878, 863);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-09 04:06:48", 15, 'F', 1470, 441);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-02 20:51:10", 19, 'F', 6582, 1974);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-02 10:36:51", 5, 'F', 7738, 2321);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-15 21:37:29", 17, 'F', 6574, 1972);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-04-06 07:38:26", 9, 'F', 6900, 2070);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-02 20:44:23", 15, 'F', 3803, 1140);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-20 18:48:39", 14, 'F', 1233, 369);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-03 11:12:37", 7, 'F', 4762, 1428);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-07 12:50:42", 6, 'F', 6316, 1894);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-26 23:48:25", 6, 'F', 6093, 1827);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-14 19:34:32", 17, 'F', 3629, 1088);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-13 20:13:14", 5, 'F', 3595, 1078);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-08 11:47:17", 8, 'F', 6878, 2063);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-04-18 18:54:34", 18, 'F', 7339, 2201);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-09 22:46:29", 21, 'F', 534, 160);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-01 17:34:45", 14, 'F', 7146, 2143);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-03 17:07:54", 21, 'F', 2317, 695);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-11 10:19:12", 17, 'F', 5059, 1517);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-16 21:55:44", 21, 'F', 7614, 2284);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-17 06:03:52", 22, 'F', 4740, 1422);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-25 22:45:33", 2, 'F', 2897, 869);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-26 07:44:03", 6, 'F', 2431, 729);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-11 12:26:25", 3, 'F', 5085, 1525);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-07 19:39:02", 16, 'F', 1997, 599);
+
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-26 01:52:57", 1, 'E', -639, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-04 16:34:09", 1, 'E', -841, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-19 14:15:03", 1, 'E', -945, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-13 19:31:48", 1, 'E', -680, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-18 06:22:58", 1, 'E', -356, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-26 04:17:52", 2, 'E', -881, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-22 07:16:44", 2, 'E', -1798, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-23 19:51:28", 2, 'E', -554, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-18 09:40:28", 2, 'E', -893, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-18 06:57:12", 2, 'E', -794, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-07 07:04:06", 2, 'E', -167, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-18 10:48:17", 3, 'E', -572, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-03 07:24:58", 3, 'E', -770, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-19 16:06:33", 3, 'E', -334, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-24 17:43:26", 3, 'E', -782, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-09 17:43:56", 4, 'E', -216, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-09 13:26:06", 4, 'E', -305, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-23 17:07:40", 4, 'E', -419, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-09 23:41:28", 4, 'E', -2195, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-26 20:28:26", 4, 'E', -743, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-19 20:50:11", 5, 'E', -830, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-24 04:07:22", 5, 'E', -120, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-03 02:13:30", 5, 'E', -1751, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-09 23:54:23", 5, 'E', -285, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-08 06:08:20", 5, 'E', -1073, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-13 10:19:21", 5, 'E', -512, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-09 17:03:11", 5, 'E', -600, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-06 03:13:42", 6, 'E', -891, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-05 03:19:24", 6, 'E', -937, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-15 19:01:23", 6, 'E', -278, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-28 14:32:18", 6, 'E', -424, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-19 06:21:41", 6, 'E', -760, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-28 18:56:47", 6, 'E', -641, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-02 05:25:30", 6, 'E', -131, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-22 19:42:10", 6, 'E', -719, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-20 21:11:11", 7, 'E', -88, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-11 02:46:33", 7, 'E', -173, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-28 19:39:56", 7, 'E', -642, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-09 22:18:27", 8, 'E', -168, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-15 18:55:20", 8, 'E', -676, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-25 12:45:48", 8, 'E', -2393, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-28 16:12:25", 8, 'E', -714, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-09 06:03:38", 8, 'E', -489, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-11 07:09:03", 8, 'E', -375, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-15 14:21:27", 8, 'E', -364, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-28 12:25:42", 8, 'E', -495, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-16 02:37:02", 9, 'E', -115, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-02 06:26:06", 9, 'E', -2030, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-18 09:17:22", 9, 'E', -595, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-19 10:07:53", 9, 'E', -36, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-05 01:37:18", 9, 'E', -1243, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-16 12:51:04", 10, 'E', -496, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-28 13:29:11", 10, 'E', -1432, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-23 21:36:12", 10, 'E', -67, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-08 05:53:54", 10, 'E', -318, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-16 08:02:45", 10, 'E', -350, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-05 14:47:22", 10, 'E', -1106, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-10 14:38:09", 11, 'E', -408, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-18 19:58:59", 11, 'E', -527, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-21 22:11:13", 11, 'E', -700, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-08 08:13:11", 11, 'E', -630, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-12 06:21:17", 11, 'E', -377, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-09 08:57:41", 11, 'E', -130, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-22 12:26:21", 12, 'E', -870, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-05 06:17:47", 12, 'E', -1053, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-13 20:25:08", 12, 'E', -574, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-08 01:36:34", 12, 'E', -567, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-14 10:55:20", 12, 'E', -891, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-03 16:15:09", 12, 'E', -622, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-06 04:18:06", 12, 'E', -758, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-06 01:14:55", 12, 'E', -1945, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-09 13:33:19", 13, 'E', -300, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-11 04:37:11", 13, 'E', -713, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-08 15:11:29", 14, 'E', -911, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-01 09:49:16", 14, 'E', -1828, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-24 17:24:44", 14, 'E', -541, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-28 21:14:05", 14, 'E', -386, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-10 03:20:47", 14, 'E', -771, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-16 07:51:36", 14, 'E', -464, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-09 13:14:36", 15, 'E', -185, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-14 14:04:31", 15, 'E', -657, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-22 16:55:14", 15, 'E', -911, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-21 11:38:01", 16, 'E', -308, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-18 07:01:37", 16, 'E', -388, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-01 06:33:34", 16, 'E', -141, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-20 05:02:44", 16, 'E', -127, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-02 17:46:33", 16, 'E', -538, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-20 03:59:33", 16, 'E', -476, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-26 03:43:18", 16, 'E', -308, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-04-04 22:07:53", 17, 'E', -464, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-15 14:36:47", 17, 'E', -285, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-22 03:56:06", 17, 'E', -710, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-01 12:05:17", 17, 'E', -3042, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-22 03:32:50", 17, 'E', -823, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-17 22:15:06", 17, 'E', -730, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-25 06:25:23", 17, 'E', -4842, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-28 04:38:40", 17, 'E', -946, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-13 10:39:19", 17, 'E', -529, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-17 02:49:27", 18, 'E', -179, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-17 17:15:30", 18, 'E', -662, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-23 09:52:43", 18, 'E', -136, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-28 11:32:58", 18, 'E', -422, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-12 09:31:29", 18, 'E', -163, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-27 16:06:59", 18, 'E', -838, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-07 15:04:11", 18, 'E', -138, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-28 11:23:01", 19, 'E', -1869, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-09 14:43:09", 19, 'E', -924, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-18 08:23:23", 19, 'E', -456, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-01 03:50:10", 19, 'E', -1240, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-10 16:23:25", 19, 'E', -459, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-21 12:11:35", 19, 'E', -496, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-09 07:39:44", 20, 'E', -667, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-06 08:59:28", 20, 'E', -1766, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-15 09:34:09", 20, 'E', -1411, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-27 14:03:38", 20, 'E', -106, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-26 17:25:59", 20, 'E', -663, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-12 01:23:42", 20, 'E', -381, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-19 01:13:20", 20, 'E', -336, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-19 09:22:08", 20, 'E', -1029, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-24 18:06:35", 20, 'E', -500, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-10 03:08:23", 20, 'E', -865, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-08 15:42:14", 20, 'E', -726, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-26 22:08:41", 21, 'E', -240, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-20 02:23:05", 21, 'E', -1714, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-20 23:39:40", 21, 'E', -185, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-06 02:37:09", 21, 'E', -103, 599);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-19 12:14:10", 21, 'E', -2072, 599);
+
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-04 09:21:38", 12, 'S', -650, 195);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-04-13 06:57:35", 15, 'S', -4450, 1335);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-13 15:34:56", 14, 'S', -1975, 592);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-03 15:36:21", 12, 'S', -590, 177);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-15 21:23:24", 13, 'S', -1575, 472);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-09 15:05:36", 10, 'S', -1300, 390);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-25 09:33:25", 6, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-20 11:14:03", 18, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-23 09:43:54", 13, 'S', -1575, 472);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-26 17:25:08", 17, 'S', -5200, 1560);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-26 09:37:19", 9, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-22 16:18:11", 17, 'S', -5200, 1560);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-10-05 06:36:27", 7, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-27 03:26:01", 10, 'S', -1100, 330);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-20 11:22:10", 14, 'S', -1975, 592);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-09 04:08:53", 18, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-19 20:33:20", 16, 'S', -2250, 675);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-12 09:03:24", 18, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-21 04:44:07", 19, 'S', -670, 201);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-19 02:10:39", 9, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-28 19:37:34", 20, 'S', -880, 264);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-22 09:22:38", 5, 'S', -1300, 390);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-25 19:16:11", 12, 'S', -650, 195);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-12 19:27:27", 22, 'S', -2600, 780);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-03 15:33:34", 12, 'S', -730, 219);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-24 05:02:37", 4, 'S', -1400, 420);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-20 15:29:52", 5, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-10 18:30:42", 17, 'S', -4900, 1470);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-12 21:45:35", 22, 'S', -2600, 780);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-16 23:32:24", 5, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-04-01 03:02:08", 18, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-13 15:13:02", 21, 'S', -2100, 630);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-17 03:31:29", 5, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-02 06:11:03", 21, 'S', -1350, 405);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-01 01:26:35", 17, 'S', -4900, 1470);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-17 05:05:53", 13, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-17 04:18:41", 7, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-10-19 13:53:37", 19, 'S', -525, 157);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-24 23:06:31", 22, 'S', -2700, 810);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-01 13:59:21", 18, 'S', -2950, 885);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-04 19:12:12", 6, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-08 17:45:35", 17, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-07 07:45:08", 10, 'S', -1300, 390);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-02 05:01:50", 10, 'S', -1100, 330);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-08 23:59:04", 21, 'S', -1700, 510);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-15 06:10:52", 20, 'S', -880, 264);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-22 11:35:16", 20, 'S', -900, 270);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-15 23:32:32", 13, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-20 18:21:50", 3, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-16 10:03:53", 16, 'S', -2250, 675);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-19 12:02:17", 14, 'S', -2100, 630);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-20 07:53:26", 9, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-22 06:56:28", 9, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-16 22:59:55", 17, 'S', -4900, 1470);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-10 13:53:14", 16, 'S', -2250, 675);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-01 16:40:57", 18, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-04 01:39:51", 22, 'S', -2600, 780);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-02 09:46:23", 16, 'S', -2250, 675);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-01 20:24:51", 11, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-21 05:24:49", 18, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-02 07:28:27", 16, 'S', -2250, 675);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-09 23:03:53", 13, 'S', -1700, 510);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-22 14:53:17", 21, 'S', -1350, 405);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-06 07:33:23", 7, 'S', -1400, 420);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-17 02:18:25", 21, 'S', -1350, 405);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-07-02 22:02:25", 1, 'S', -3000, 900);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-22 10:54:26", 18, 'S', -5975, 1792);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-27 16:37:42", 14, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-11 04:23:19", 17, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-22 20:35:09", 1, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-01 08:58:50", 7, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-02-09 14:55:05", 1, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-25 07:43:01", 9, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-12-15 17:15:09", 14, 'S', -2100, 630);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-21 15:01:49", 13, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-11 21:59:28", 13, 'S', -1575, 472);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-26 03:18:27", 16, 'S', -2250, 675);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-12 09:56:20", 16, 'S', -2325, 697);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-16 02:36:54", 22, 'S', -2700, 810);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-07-21 08:40:16", 15, 'S', -2650, 795);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-08 13:58:21", 16, 'S', -2325, 697);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-04-23 03:37:37", 11, 'S', -1650, 495);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-26 04:57:40", 5, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-28 09:28:48", 12, 'S', -590, 177);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-10 20:31:50", 9, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-05-07 20:52:28", 14, 'S', -2300, 690);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-06 04:20:38", 17, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-02-27 18:15:17", 3, 'S', -3000, 900);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-26 01:39:09", 11, 'S', -1650, 495);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-28 17:30:03", 3, 'S', -1300, 390);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-11 01:51:39", 12, 'S', -590, 177);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-15 19:50:08", 4, 'S', -1300, 390);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-21 09:04:23", 7, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-01 19:48:02", 17, 'S', -4900, 1470);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-25 13:02:18", 9, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-26 05:48:29", 2, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-12-17 23:59:06", 6, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-03 14:41:15", 14, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-01 01:36:53", 17, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-23 17:40:21", 13, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-06 03:36:52", 4, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-18 02:54:23", 5, 'S', -1400, 420);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-15 06:13:14", 22, 'S', -2600, 780);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-05-21 15:52:28", 20, 'S', -880, 264);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-08-16 10:40:31", 3, 'S', -1400, 420);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-26 22:29:41", 15, 'S', -2650, 795);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-24 02:20:18", 5, 'S', -1300, 390);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-19 20:16:22", 12, 'S', -590, 177);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-14 11:17:42", 22, 'S', -2600, 780);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-11-25 22:31:28", 21, 'S', -1350, 405);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-01-15 23:33:53", 9, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-03-20 12:04:02", 17, 'S', -4900, 1470);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-17 21:26:40", 11, 'S', -1700, 510);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-26 03:53:23", 16, 'S', -2250, 675);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-09 12:34:09", 17, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-04-25 21:55:01", 17, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-09-15 16:10:13", 11, 'S', -1650, 495);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-08 13:01:06", 13, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-08 22:52:15", 9, 'S', -1500, 450);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-17 19:30:42", 15, 'S', -3100, 930);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-07-21 20:03:30", 4, 'S', -1300, 390);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-17 16:37:40", 7, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-07 10:19:04", 18, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-08-24 05:39:12", 17, 'S', -3100, 930);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-01 19:56:33", 4, 'S', -1200, 360);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-01-03 08:09:49", 10, 'S', -1100, 330);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-13 20:21:56", 21, 'S', -3350, 1005);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-06-09 16:05:25", 18, 'S', -2950, 885);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-18 10:10:47", 7, 'S', -1400, 420);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-08-04 14:11:57", 17, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-12-06 20:15:49", 18, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-27 05:20:54", 16, 'S', -2250, 675);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-09-02 20:13:57", 11, 'S', -1650, 495);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-03-02 02:41:36", 9, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-21 13:59:33", 3, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-02-19 10:56:17", 12, 'S', -650, 195);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-05-11 16:15:13", 12, 'S', -650, 195);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-15 17:15:42", 16, 'S', -2250, 675);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-06-11 10:47:17", 18, 'S', -5975, 1792);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-27 16:37:59", 14, 'S', -2300, 690);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-11 12:19:31", 11, 'S', -1650, 495);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-10-23 08:04:23", 11, 'S', -1650, 495);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-02 18:19:42", 15, 'S', -3100, 930);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-09-01 09:03:44", 14, 'S', -1800, 540);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-01-18 17:25:40", 17, 'S', -2800, 840);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2017-11-16 08:38:38", 9, 'S', -1575, 472);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-11-20 05:45:22", 15, 'S', -2650, 795);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-03-21 13:42:03", 9, 'S', -1575, 472);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2019-04-23 16:18:33", 21, 'S', -1350, 405);
+insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values("2018-06-25 11:59:12", 9, 'S', -1500, 450);

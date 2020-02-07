@@ -14,57 +14,80 @@ echo "" > $outfile;
 
 # Ricevute
 
-# RICEVUTE_NUMBER=150;
+RICEVUTE_NUMBER=150;
 
-# index=1;
-# ricevuteForYear=();
+index=1;
+ricevuteOutfile='ricevute.sql';
 
-# while [ $index -le $RICEVUTE_NUMBER ]; do
+ricevuteForYear=();
 
-# 	date=`generateDate`;
-# 	year=`echo $date | cut -d'-' -f 1`;
-# 	sede=$((RANDOM % 22));
-# 	saldo=`shuf -i 1-1000 -n 1`;
-# 	contributi=$((saldo * 30 / 100));
+echo "" > $ricevuteOutfile;
 
-# 	[[ -z ${ricevuteForYear[$year]+x} ]] && ricevuteForYear[$year]=1 || ricevuteForYear[$year]=$((${ricevuteForYear[$year]} + 1));
+while [ $index -le $RICEVUTE_NUMBER ]; do
 
-# 	echo "insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values(\"$date\", $sede, 'R', $saldo, $contributi)" >> $outfile;
-# 	echo "insert into ricevute(ts, codiceSede, progressivoRicevute) values(\"$date\", $sede, ${ricevuteForYear[$year]})" >> $outfile;
+	date=`generateDate`;
+	year=`echo $date | cut -d'-' -f 1`;
+	sede=$((RANDOM % 22 + 1));
+	saldo=`shuf -i 1-1000 -n 1`;
+	contributi=$((saldo * 30 / 100));
 
-# 	index=$((index + 1));	
-# done
+	[[ -z ${ricevuteForYear[$year]+x} ]] && ricevuteForYear[$year]=1 || ricevuteForYear[$year]=$((${ricevuteForYear[$year]} + 1));
 
-# # Fatture
+	echo "insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values(\"$date\", $sede, 'R', $saldo, $contributi);" >> $outfile;
+	echo "insert into ricevute(ts, codiceSede, progressivoRicevute) values(\"$date\", $sede, ${ricevuteForYear[$year]});" >> $ricevuteOutfile;
 
-# FATTURE_NUMBER=150;
+	index=$((index + 1));	
+done
 
-# index=1;
-# fattureForYear=();
+echo "" >> $outfile;
 
-# while [ $index -le $FATTURE_NUMBER ]; do
+# Fatture
 
-# 	date=`generateDate`;
-# 	year=`echo $date | cut -d'-' -f 1`;
-# 	sede=$((RANDOM % 22));
-# 	saldo=`shuf -i 400-8000 -n 1`;
-# 	contributi=$((saldo * 30 / 100));
+FATTURE_NUMBER=150;
 
-# 	[[ -z ${fattureForYear[$year]+x} ]] && fattureForYear[$year]=1 || fattureForYear[$year]=$((${fattureForYear[$year]} + 1));
+index=1;
+fattureOutfile='fatture.sql';
 
-# 	echo "insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values(\"$date\", $sede, 'F', $saldo, $contributi)" >> $outfile;
-# 	echo "insert into fatture(ts, codiceSede, progressivoFatture, agenzia) values(\"$date\", $sede, ${fattureForYear[$year]}, 'NULL')" >> $outfile;
+fattureForYear=();
+agenzieFilename='agenzie.txt';
 
-# 	index=$((index + 1));
-# done
+agenzie=();
+for el in `cat $agenzieFilename`; do
+	agenzie=("${agenzie[@]}" "$el");
+done
+
+echo "" > $fattureOutfile;
+
+while [ $index -le $FATTURE_NUMBER ]; do
+
+	date=`generateDate`;
+	year=`echo $date | cut -d'-' -f 1`;
+	sede=$((RANDOM % 22 + 1));
+	saldo=`shuf -i 400-8000 -n 1`;
+	contributi=$((saldo * 30 / 100));
+
+	agenzia=${agenzie[$((RANDOM % ${#agenzie[@]}))]};
+
+	[[ -z ${fattureForYear[$year]+x} ]] && fattureForYear[$year]=1 || fattureForYear[$year]=$((${fattureForYear[$year]} + 1));
+
+	echo "insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values(\"$date\", $sede, 'F', $saldo, $contributi);" >> $outfile;
+	echo "insert into fatture(ts, codiceSede, progressivoFatture, agenzia) values(\"$date\", $sede, ${fattureForYear[$year]}, \"$agenzia\");" >> $fattureOutfile;
+
+	index=$((index + 1));
+done
+
+echo "" >> $outfile;
 
 # Esborsi
 
 ESBORSI_NUMBER=150;
 
 index=1;
+esborsiOutfile='esborsi.sql';
+
 carichiFilename='carichi.txt';
 
+echo "" > $esborsiOutfile;
 
 while read line; do
 	if [[ "$((RANDOM % 2))" != "1" ]]; then
@@ -81,39 +104,54 @@ while read line; do
 			date=`generateDate`;
 		done
 
-		contributi=$((saldo * 30 / 100));
-		saldo=$((-1 * saldo));
+		econtributi=`echo "$saldo * 30 / 100" | bc`;
+		saldo=`echo "-1 * $saldo" | bc`;
 
-		echo "insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values(\"$date\", $idMagazzinoSede, 'E', $saldo, $contributi)" >> $outfile;
-		echo "insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values(\"$dateCarico\", $idMagazzinoSede, \"$date\", $idMagazzinoSede)" >> $outfile;
+		echo "insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values(\"$date\", $idMagazzinoSede, 'E', $saldo, $contributi);" >> $outfile;
+		echo "insert into pagamento(tsCarico, magazzino, tsTransazione, codiceSede) values(\"$dateCarico\", $idMagazzinoSede, \"$date\", $idMagazzinoSede);" >> $esborsiOutfile;
 	fi
 done < $carichiFilename
+
+echo "" >> $outfile;
 
 # Retribuzioni
 
 RETRIBUZIONI_NUMBER=150;
 
 index=1;
+retribuzioniOutfile='retribuzioni.sql';
+
 dipendentiFilename='dipendenti.txt';
 
-dipendenti=();
-for el in `cat $dipendentiFilename`; do
-	dipendenti=("${dipendenti[@]}" "$el");
-done
+dipendentiSedi=();
+dipendentiCF=();
+dipendentiStipendi=();
+while read line; do
+	sede=`echo $line | cut -d' ' -f 1`;
+	CF=`echo $line | cut -d' ' -f 2`;
+	stipendio=`echo $line | cut -d' ' -f 3`;
+
+	dipendentiSedi=("${dipendentiSedi[@]}" "$sede");
+	dipendentiCF=("${dipendentiCF[@]}" "$CF");
+	dipendentiStipendi=("${dipendentiStipendi[@]}" "$stipendio");
+done < $dipendentiFilename
+
+echo "" > $retribuzioniOutfile;
 
 while [ $index -le $RETRIBUZIONI_NUMBER ]; do
 
 	date=`generateDate`;
-	sede=$((RANDOM % 22));
 
-	saldo=`shuf -i 1000-2000 -n 1`;
-	contributi=$((saldo * 30 / 100));
-	saldo=$((-1 * saldo));
+	dipendenteIndex=$((RANDOM % ${#dipendentiCF[@]}));
+	dipendente=${dipendentiCF[$dipendenteIndex]};
+	sede=${dipendentiSedi[$dipendenteIndex]};
 
-	dipendente=${dipendenti[$((RANDOM % ${#dipendenti[@]}))]};
+	saldo=${dipendentiStipendi[$dipendenteIndex]};
+	contributi=`echo "$saldo * 30 / 100" | bc`;
+	saldo=`echo "-1 * $saldo" | bc`;
 
-	echo "insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values(\"$date\", $sede, 'S', $saldo, $contributi)" >> $outfile;
-	echo "insert into pagamento(ts, codiceSede, dipendente) values(\"$date\", $sede, \"$dipendente\")" >> $outfile;
+	echo "insert into transazioni(ts, codiceSede, tipologia, saldo, contributi) values(\"$date\", $sede, 'S', $saldo, $contributi);" >> $outfile;
+	echo "insert into retribuzioni(ts, codiceSede, dipendente) values(\"$date\", $sede, \"$dipendente\");" >> $retribuzioniOutfile;
 	
 	index=$((index + 1));
 
