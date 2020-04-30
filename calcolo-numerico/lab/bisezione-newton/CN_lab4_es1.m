@@ -22,7 +22,7 @@ toll = 1e-8;
 nmax = 100;
 
 if a > b || f(a)*f(b) > 0
-	fprintf("Gli estremi dell' intervallo non rispettano le condizioni del teorema per cui a <= b e f(a)*f(b) < 0\n");
+	fprintf("Gli estremi dell'intervallo non rispettano le condizioni del teorema per cui a <= b e f(a)*f(b) < 0\n");
 else
 	% Visualizzazione di controllo dati inseriti metodo di bisezione
 	fprintf('-------DATI BISEZIONE-------\n') ;
@@ -83,8 +83,8 @@ else
 	disp('La convergenza è stata raggiunta');
 end
 
-fprintf('Valore ultima ascissa iterata: %e\n', xvN(end));
-fprintf('Valore ultima ordinata iterata: %e\n', fxvN(end));
+fprintf('Valore finale ascissa: %e\n', xvN(end));
+fprintf('Valore finale ordinata: %e\n', fxvN(end));
 fprintf('Numero di iterazioni: %d\n', nN);
 
 iterationsNewton = 1:nN;
