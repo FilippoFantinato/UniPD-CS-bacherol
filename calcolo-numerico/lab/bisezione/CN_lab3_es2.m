@@ -3,7 +3,7 @@ clc;
 
 disp("METODO DI BISEZIONE");
 
-f = @(x) x^2 - 2;
+f = @(x) sin(x) - (x^2)/2;
 a = input("Estremo a: ");
 b = input("Estremo b: ");
 toll = 1e-8; % input("Tolleranza: ");
@@ -33,7 +33,7 @@ else
 		semilogy(1:n, abs(fxv), 'ob-');
         
         title('Filippo Fantinato | f(x) = sin(x) - x^2/2');
-        xlabel('x');
+        xlabel('Iterazioni');
         ylabel('f(x)');
 	end
 
