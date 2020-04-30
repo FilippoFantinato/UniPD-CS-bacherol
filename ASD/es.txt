@@ -1,0 +1,5 @@
+- Realizzare una versione ricorsiva della funzione InsertionSort.
+- Realizzare una funzione Dup(A,p,r) che verifica, in modo divide et impera, la presenza di duplicati nell'array A, restituendo un booleano. Estenderla ad una funzione DupCount(A,p,r) che conti il numero di duplicati, ovvero il numero di coppie {(i,j)∣i≠j ∧ A[i]=A[j]}.
+(Può essere interessante anche considerare varianti in cui si contano i valori ripetuti ovvero {A[i]∣∃j. j≠i.A[i]=A[j]} o gli indici corrispondenti a ripetizioni ovvero {i∣∃j. j≠i.A[i]=A[j]}.)
+- Realizzare una funzione Sum(A,key) che dato un array A e un intero key verifica se questo è esprimibile come la somma di due elementi di A ovvero se vi sono indici i e j tali che key = A[i] + A[j].
+Lezione 1Kaltura Video Resource
