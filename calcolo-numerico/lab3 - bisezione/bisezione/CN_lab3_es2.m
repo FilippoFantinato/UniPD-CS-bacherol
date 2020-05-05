@@ -3,7 +3,7 @@ clc;
 
 disp("METODO DI BISEZIONE");
 
-f = @(x) sin(x) - (x^2)/2;
+f = @(x) sqrt(x + 1) - exp(-x);
 a = input("Estremo a: ");
 b = input("Estremo b: ");
 toll = 1e-8; % input("Tolleranza: ");
@@ -30,13 +30,12 @@ else
 		fprintf("Valore finale ordinata: %f\n", fxv(end));
 		fprintf("Numero di iterazioni: %0.f\n", n);
 
-		semilogy(1:n, abs(fxv), 'ob-');
+		semilogy(1:n, abs(fxv), 'Ob-', 'LineWidth', 2, 'MarkerFaceColor', 'red', 'MarkerEdgeColor','red');
         
-        title('Filippo Fantinato | f(x) = sin(x) - x^2/2');
+        title('Filippo Fantinato | f(x) = sqrt(x + 1) - exp(-x)');
         xlabel('Iterazioni');
-        ylabel('f(x)');
+        ylabel('Residui');
+        legend('Residuo per Iterazione');
 	end
 
 end
-
-

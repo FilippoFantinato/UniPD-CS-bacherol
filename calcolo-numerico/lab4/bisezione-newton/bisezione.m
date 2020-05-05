@@ -14,14 +14,13 @@ function [xv, fxv, n] = bisezione(f, a, b, toll, nmax)
 % Dati di uscita :
 % xv : vettore contenente le iterazioni
 % fxv : vettore contenenti i corrispodenti residui
-% n : indice dell’ iterazione finale calcolata
+% n : indice dell'iterazione finale calcolata
 
 xv = [];
 fxv = [];
 n = 0;
 
 res = toll + 1;
-% fa = f(a);
 
 while res > toll && n < nmax
 	c = (a + b) / 2;
@@ -30,7 +29,6 @@ while res > toll && n < nmax
     
     res = abs(fc);
 
-	% s = fa * fc;
     s = f(a) * fc;
 
 	xv = [xv c];
@@ -38,7 +36,6 @@ while res > toll && n < nmax
 
 	if s > 0
 		a = c;
-        % fa = fc;
 	elseif s < 0
 		b = c;
 	else
