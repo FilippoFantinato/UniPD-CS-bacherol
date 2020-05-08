@@ -12,21 +12,14 @@ function yh = horner(P, x)
 
 yh = [ ];
 
-if length(P) == 1
-    for value = x
-        yh = [yh P(1)];
-    end    
-else
-    for value = x
-        y = P(1);
-
-        for i = 2:length(P)
-            y = y * value + P(i);
-        end 
-        
-        yh = [yh y];
+for value = x
+    y = P(1);
+    
+    for i = 2:length(P)
+        y = y * value + P(i);
     end
     
+    yh = [yh y];
 end
-    
+
 end

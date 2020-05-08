@@ -20,7 +20,6 @@ b = 1;
 x = linspace(a, b, 200);
 
 % funzione Horner
-
 yh = horner(P, x);
 
 % forma tradizionale (funzione polinomio)
