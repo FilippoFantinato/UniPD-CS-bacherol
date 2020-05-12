@@ -1,13 +1,16 @@
 clear all;
 clc;
 
+frunge = @(x) 1./(1 + x.^2);
+
 % Dati:
 a = -5;
 b = 5;
-n = 12;
+n = 10;
 numberOfComponents = 200;
 
 % Ricapitolo dei dati:
+fprintf('Dati inseriti: \n');
 fprintf('Intervallo: [%d, %d]\n', a, b);
 fprintf('Grado polinomio: %d\n', n);
 fprintf('Numero componenti del vettore equispaziato x: %d\n', numberOfComponents);
@@ -48,6 +51,7 @@ errPl = ypl - y;
 
 % Plot del primo grafico: Funzione esatta, dati e polinomio interpolante
 figure('Name', 'Grafico 1');
+
 hold on;
 
 % Funzione esatta
@@ -64,6 +68,7 @@ hold off;
 
 % Plot del secondo grafico: Funzione esatta, dati, splines e funzioni lineari a tratti
 figure('Name', 'Grafico 2');
+
 hold on;
 
 % Funzione esatta
@@ -82,6 +87,7 @@ hold off;
 
 % Plot del terzo grafico: Errore delle tre interpolazioni calcolato su x
 figure('Name', 'Grafico 3');
+
 hold on;
 
 % Errore polinomio interpolante
@@ -90,7 +96,7 @@ plot(x, errP, '-b', 'LineWidth', 2);
 plot(x, errSplines, '-r', 'LineWidth', 2);
 % Errore funzioni lineri a tratti
 plot(x, errPl, '-y', 'LineWidth', 2);
-legend('Err int polinomio grado n', 'Err spline (a tratti)', 'Err lin a tratti', 'location', 'south');
+legend('Err int polinomio grado n', 'Err spline (a tratti)', 'Err lin a tratti', 'location', 'north');
 xlabel('x');
 ylabel('y');
 

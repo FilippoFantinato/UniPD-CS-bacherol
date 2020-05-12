@@ -5,4 +5,4 @@ Con l'aumento dell'ordine del polinomio interpolante e, di conseguenza, il numer
 3. l'errore delle n funzioni lineari a tratti diminuisce di molto fino ad azzerrarsi, ma meno velocemente dell'errore delle n splines
 
 2) La soluzione converge?
-Si, la funzione converge ma solo con l’interpolazione a tratti (standard o spline)
+Si, la soluzione converge ma solo con l’interpolazione a tratti (standard o spline)
