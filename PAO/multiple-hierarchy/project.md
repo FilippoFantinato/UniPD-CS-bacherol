@@ -13,4 +13,4 @@
 5. Utilizzo di exception handling, dove appropiato
 6. Opzionale: Definizione di funzionalita' di I/O su file per opportuni dati usati da Liberty. Possibilità di utilizzo delle classi I/O si QT
 
- 
+#   
