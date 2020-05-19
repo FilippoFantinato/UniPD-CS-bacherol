@@ -1,0 +1,4 @@
+/home/filippofantinato/Desktop/UniPD/PAO/QT/sliders/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/filippofantinato/Desktop/UniPD/PAO/QT/sliders/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/filippofantinato/Desktop/UniPD/PAO/QT/sliders/cmake-build-debug/CMakeFiles/sliders.dir
+/home/filippofantinato/Desktop/UniPD/PAO/QT/sliders/cmake-build-debug/CMakeFiles/sliders_autogen.dir
