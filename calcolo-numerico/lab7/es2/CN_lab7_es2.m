@@ -18,13 +18,13 @@ g = @(x) -cos(x) + x;
 % g = @(x) x.^5 - 2*x.^3 + x;
 
 % e gli estremi di integrazione;
-% a = 0;
-% b = 12;
+a = 0;
+b = 12;
 
-a = -1;
-b = 1;
+% a = -1;
+% b = 1;
 
-% num di intervalli di ampiezza H = 2*h
+% num di raddoppi
 m = [ ];
 nm = input('Inserire il numero di volte in cui verrà raddoppiata m: ');
 
@@ -47,6 +47,9 @@ int_exact = g(b) - g(a);
 
 actual_m = 1;
 
+% Apertura del file
+fileId = fopen(ERR_FILENAME, 'w');
+
 for i = 1:nm
     % Raddoppio m
 	m(i) = 2*actual_m;
@@ -62,18 +65,23 @@ for i = 1:nm
 	% Calcolo dell'errore commesso
 
 	% errore trapezi
-	err_trap(i) = int_exact - int_t;
+	err_trap(i) = abs(int_exact - int_t);
 
 	% errore simpson
-	err_sim(i) = int_exact - int_s;
+	err_sim(i) = abs(int_exact - int_s);
+    
+    % Scrivo i dati appena calcolati sul file
+    fprintf(fileId, '%e\t%e\t%e\n', actual_m, err_trap(i), err_sim(i));
 end
 
+figure('Name', 'Grafico degli Errori');
 
-figure('Name', 'Errori');
 % Grafico dell'errore del metodo dei trapezi
-loglog(m, err_trap, '-bo', 'LineWidth', 2);
+loglog(m, err_trap, '-bv', 'LineWidth', 2);
 
 hold on;
+title(strcat('f(x)=', func2str(f), ' | Raddoppi: ', int2str(nm)));
+
 % Grafico dell'errore del metodo di Simpson
 loglog(m, err_sim, '-ro', 'LineWidth', 2);
 
@@ -81,4 +89,13 @@ legend('Errore trapezi', 'Errore Simpson');
 xlabel('m');
 ylabel('errore');
 
-hold off
+hold off;
+
+% Visualizzo la tabella degli errori per iterazione
+mErrsMatrix = [m; err_trap; err_sim]; 
+fprintf('Tabella errori per iterazione: \n');
+fprintf('M\tErrore Trapezi\tErrore Simpson\n');
+fprintf('%d\t%e\t%e\n', mErrsMatrix);
+
+% Chiudo il file
+fclose(fileId);

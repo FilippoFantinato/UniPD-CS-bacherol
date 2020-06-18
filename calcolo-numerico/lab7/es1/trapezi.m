@@ -16,13 +16,10 @@ function [int, H, x] = trapezi(f, a, b, m)
 
 H = (b-a)/m;
 x = a:H:b;
-int = f(x(1)) + f(x(end));
+int = (H/2)*(f(x(1)) + f(x(end)));
 
-for i = 2:m-1
-    int = int + (2*f(x(i)));  
+for i = 2:m
+    int = int + (H*f(x(i)));  
 end
 
-int = int * (H/2);
-
 end
-
