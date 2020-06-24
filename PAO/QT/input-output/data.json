@@ -1,0 +1,94 @@
+{
+    "entries": [
+        {
+            "title": "A0",
+            "type": "A"
+        },
+        {
+            "title": "A1",
+            "type": "A"
+        },
+        {
+            "title": "A2",
+            "type": "A"
+        },
+        {
+            "title": "A3",
+            "type": "A"
+        },
+        {
+            "title": "A4",
+            "type": "A"
+        },
+        {
+            "title": "A5",
+            "type": "A"
+        },
+        {
+            "title": "A6",
+            "type": "A"
+        },
+        {
+            "title": "A7",
+            "type": "A"
+        },
+        {
+            "title": "A8",
+            "type": "A"
+        },
+        {
+            "title": "A9",
+            "type": "A"
+        },
+        {
+            "checked": true,
+            "title": "B0",
+            "type": "B"
+        },
+        {
+            "checked": false,
+            "title": "B1",
+            "type": "B"
+        },
+        {
+            "checked": true,
+            "title": "B2",
+            "type": "B"
+        },
+        {
+            "checked": false,
+            "title": "B3",
+            "type": "B"
+        },
+        {
+            "checked": true,
+            "title": "B4",
+            "type": "B"
+        },
+        {
+            "checked": false,
+            "title": "B5",
+            "type": "B"
+        },
+        {
+            "checked": true,
+            "title": "B6",
+            "type": "B"
+        },
+        {
+            "checked": false,
+            "title": "B7",
+            "type": "B"
+        },
+        {
+            "checked": true,
+            "title": "B8",
+            "type": "B"
+        },
+        {
+            "checked": false,
+            "title": "B9",
+            "type": "B"
+        }
+    ]
+}
