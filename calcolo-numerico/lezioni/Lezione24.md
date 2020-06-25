@@ -59,7 +59,7 @@ Le ultime due operazioni sono la somma degli scarti quadratici.
 
 Si vede facilmente che $$\Phi(x)$$ è un polinomio di grado 2 nelle n variabili $$x_1, x_2, ..., x_n$$
 
-In effetti abbiamo già incontrato una situazione di questo tipo con l'approssimazione polinomiale ai minimi quadrati nella lezione 15, dove si cercava un polinomio di grado k (cambiando leggermente la notazione per non fare confusione coi simboli attuali) che rendesse minima la somma degli scarti quadratici rispetto ai valori $$y_1, ..., y_N$$ di una funzione campionata su N ascisse $$t_1, ..., t_N$$, ovvero si cercavano dei coefficienti $$c_1, ..., C_{k+1}$$ che realizzassero 
+In effetti abbiamo già incontrato una situazione di questo tipo con l'approssimazione polinomiale ai minimi quadrati nella lezione 15, dove si cercava un polinomio di grado k (cambiando leggermente la notazione per non fare confusione coi simboli attuali) che rendesse minima la somma degli scarti quadratici rispetto ai valori $$y_1, ..., y_N$$ di una funzione campionata su N ascisse $$t_1, ..., t_N$$, ovvero si cercavano dei coefficienti $$c_1, ..., c_{k+1}$$ che realizzassero 
 $$
 min_{c\in\R^{k+1}} \Phi(c), \Phi(c) = \sum_{i=1}^N(y_i-(Vc)_i)^2 = ||y-Vc||_2^2
 $$
@@ -81,9 +81,9 @@ risolve il sistema lineare $$n \times n$$ $$A^tAx = A^tb$$ (sistema delle equazi
 
 **Dimostrazione**
 
-Siccome la dimostrazione è del tutto analogo a quella già fatta nel caso dei minimi quadrati polinomiali, la sviluppiamo senza ridiscutere tutti i dettagli.
+Siccome la dimostrazione è del tutto analoga a quella già fatta nel caso dei minimi quadrati polinomiali, la sviluppiamo senza ridiscutere tutti i dettagli.
 
-Per prima cosa $$\Phi(x)$$ è minimo se e solo se $$\Phi(x+z)\ge\Phi(x)\forall z\in \R^n$$
+Per prima cosa $$\Phi(x)$$ è minimo se e solo se $$\Phi(x+z)\ge\Phi(x),\forall z\in \R^n$$
 
 Ora 
 $$
@@ -95,7 +95,7 @@ $$
 $$
 $$(\Leftarrow)$$
 
-Se $$A^tAx=A^tb$$ allora $$\Phi(x+z)=\Phi(x)+||Az||_2^2\ge\Phi(x)\forall z, ||Az||^2_2\ge0$$ cioè $$\Phi(x)$$ è minimo
+Se $$A^tAx=A^tb$$ allora $$\Phi(x+z)=\Phi(x)+||Az||_2^2\ge\Phi(x),\forall z, ||Az||^2_2\ge0$$ cioè $$\Phi(x)$$ è minimo
 
 $$(\Rightarrow)$$
 
@@ -137,19 +137,19 @@ $$
 $$
 Inoltre $$(z, A^tAz)=||Az||_2^2=0 \iff Az=0$$ (cioè se e solo se z è nel nucleo di A).
 
-Se le colonne di A (ricordiamoci che A è rettangolare $$m \times n$$ con $$m>n$$) cono linearmente indipendenti, cioè se $$rango(A)=n$$, allora $$Az=0 \iff z=0$$, di conseguenza $$A^tA$$ è definita positiva e quindi non singolare.
+Se le colonne di A (ricordiamoci che A è rettangolare $$m \times n$$ con $$m>n$$) sono linearmente indipendenti, cioè se $$rango(A)=n$$, allora $$Az=0 \iff z=0$$, di conseguenza $$A^tA$$ è definita positiva e quindi non singolare.
 
-In altre parole se A ha $$rando\_max=n$$ la soluzione ai minimi quadrati del sistema sovradeterminato è unica.
+In altre parole se A ha $$rango\_max=n$$ la soluzione ai minimi quadrati del sistema sovradeterminato è unica.
 
-Nel caso particolare dei minimi quadrati polinomiali di grado k, abbiamo visto, adesso, che $$A=V$$ ha rango massimo se esistono almeno n=k+1 nodi di campionamento distinti tra gli $$m=N$$ nodi (e quindi di sicuro se gli N nodi sono tutti distinti come è naturale).
+Nel caso particolare dei minimi quadrati polinomiali di grado k, abbiamo visto, adesso, che $$A=V$$ ha rango massimo se esistono almeno $$n=k+1$$ nodi di campionamento distinti tra gli $$m=N$$ nodi (e quindi di sicuro se gli N nodi sono tutti distinti come è naturale).
 
 **SOLUZIONE DEL SISTEMA DELLE EQUAZIONI NORMALI**
 
 Abbiamo appena dimostrato che se $$rango(A)=n$$ la soluzione di $$Ax=b$$ ai minimi quadrati è l'unica soluzione del sistema non singolare $$A^tAx=A^tb$$.
 
-Quindi si potrebbe pensare di risolvere il sistema sovradeterminato applicando as esempio il MEG al sistema delle equazioni normali.
+Quindi si potrebbe pensare di risolvere il sistema sovradeterminato applicando ad esempio il MEG al sistema delle equazioni normali.
 
-Per fare questo però bisogna calcolare ed utilizzare $$A^tA$$, che non è la strada migliore perchè $$A^tA$$ tende ad essere mal condizionata e nelle applicazioni è naturale che ad esempio il vettore b (e quindi anche $$A^tb$$) sia affetto da errori.
+Per fare questo però bisogna calcolare ed utilizzare la matrice $$A^tA$$, che non è la strada migliore perchè $$A^tA$$ tende ad essere mal condizionata e nelle applicazioni è naturale che ad esempio il vettore b (e quindi anche $$A^tb$$) sia affetto da errori.
 
 Perchè $$A^tA$$ tende ad essere mal condizionata? Osserviamo che 
 $$
@@ -163,11 +163,11 @@ Qui però stiamo usando il concetto di condizionamento di una matrice rettangola
 
 Per "intuire" cosa succede però consideriamo il caso di $$A$$ quadrata e simmetrica: allora $$A^tA=A^2$$ e $$\lambda_i(A^tA)=\lambda_i(A^2)=(\lambda_i(A))^2$$ sono gli autovalori di $$A^tA$$, quindi essendo anche $$A^2$$ simmetrica 
 $$
-k_2(A^tA)=k_2(A^2)=\frac{max\lambda_i(A^2)}{min\lambda_i(A^2)}=(\frac{max|\lambda_i(A^2)|}{min|\lambda_i(A^2)|})^2=(k_2(A))^2>>k_2(A)
+k_2(A^tA)=k_2(A^2)=\frac{max\lambda_i(A^2)}{min\lambda_i(A^2)}=(\frac{max|\lambda_i(A)|}{min|\lambda_i(A)|})^2=(k_2(A))^2>>k_2(A)
 $$
-perchè come sappiamo $$k(a) \ge 1$$ in qualsiasi norma matriciale indotta e $$k_2(A)>1$$ se $$A$$ (simmetrica) ha almeno 2 autovalori distinti.
+perchè come sappiamo $$k(A) \ge 1$$ in qualsiasi norma matriciale indotta e $$k_2(A)>1$$ se $$A$$ (simmetrica) ha almeno 2 autovalori distinti.
 
-Esiste però una strada alternativa per la soluzione di $$A^tAx=A^tb$$, che ?entra? di usare direttamente la matrice mal condizionata $$A^tA$$ ed è basata su una delle più importanti fattorizzazioni di matrice, la fattorizzazione QR, che permette di scrivere una qualsiasi matrice $$A \in \R^{m \times n}$$ con $$m \ge n$$ e $$rango(n)$$ come prodotto di una matrice TRIANGOLARE SUPERIORE (non singolare).
+Esiste però una strada alternativa per la soluzione di $$A^tAx=A^tb$$, che evita di usare direttamente la matrice mal condizionata $$A^tA$$ ed è basata su una delle più importanti fattorizzazioni di matrice, la fattorizzazione QR, che permette di scrivere una qualsiasi matrice $$A \in \R^{m \times n}$$ con $$m \ge n$$ e $$rango(n)$$ come prodotto di una matrice ORTOGONALE per una matrice TRIANGOLARE SUPERIORE (non singolare).
 
 **TEOREMA** (fattorizzazione QR di una matrice rettangolare)
 
@@ -203,7 +203,7 @@ Innanzitutto, cosa significa che $$Q$$ è ortogonale, cioè che $$Q^tQ=1$$?
 
 Osserviamo che $$Q^t \in \R^{n \times m}$$ ha per righe le colonne di Q, quindi $$Q^tQ = I \in \R^{n \times n}$$ cioè
 $$
-R_i(Q^t)l_j(Q)=(l_i(Q), l_i(!))=\delta_{ij}\\
+R_i(Q^t)l_j(Q)=(l_i(Q), l_i(Q))=\delta_{ij}\\
 prodotto\space riga\space i,colj = prodotto \space scalare = delta\space di\space kronecker
 $$
 ovvero le colonne di Q sono vettori ORTONORMALI di $$R^m$$.
@@ -233,11 +233,11 @@ l_1(AR^{-1})=l_1(Q)=\delta_{11} l_1(A) \\
 l_2(AR^{-1})=l_2(Q)=\delta_{12} l_1(A) + \delta_{22} l_2(A)\\
 l_3(AR^{-1})=l_3(Q)=\delta_{13} l_1(A) + \delta_{23} l_2(A) + \delta_{33} l_3(A) \\
 ...\\
-l_j(AR^{-1})=l_j(Q)=\sum_{i=1}^j\delta_{ij}l_i(A), i \le j \le n
+l_j(AR^{-1})=l_j(Q)=\sum_{i=1}^j\delta_{ij}l_i(A), 1 \le j \le n
 $$
 cioè la colonna j-esima di $$AR^{-1}=Q$$ si ottiene come combinazione lineare delle prime j colonne di $$A$$ ed essendo $$Q$$ ortogonale questa combinazione lineare ha l'effetto di ortonormalizzare le colonne.
 
-Ma sappiamo dall'algebra lineare che c'è una algoritmo che fa esattamente questo, il procedimento di ortonormalizzazione di Gauss-Schmidt, che costruisce un set di vettori ortogonali a partire da un set di vettori linearmente indipendenti.
+Ma sappiamo dall'algebra lineare che c'è un algoritmo che fa esattamente questo, il procedimento di ortonormalizzazione di Gauss-Schmidt, che costruisce un set di vettori ortogonali a partire da un set di vettori linearmente indipendenti.
 
 Ovvero dietro la possibilità di fattorizzazione come prodotto QR una matrice $$m \times n$$ con $$m \ge n$$ e colonne linearmente indipendenti (cioè $$rango(A)=n$$) c'è il procedimento di Gauss-Schmidt.
 
@@ -257,13 +257,13 @@ ma essendo $$R$$ (e quindi $$R^t$$) invertibile
 $$
 (R^t)^{-1}R^tRx = Rx = (R^t)^{-1}R^tQ^tb = Q^tb
 $$
-Cioe il sistema $$A^tAx=A^tb$$ equivale al sistema triangolare superiore
+Cioè il sistema $$A^tAx=A^tb$$ equivale al sistema triangolare superiore
 $$
 Rx = d = Q^tb
 $$
 che si può facilmente risolvere con la sostituzione all'indietro.
 
-In realtà non c'è un vantaggio sostanziale dal punto di vista del costo computazionale rispetto al calcolo di $$A^tA$$ e all'applicazione del MEG/LU (che in questo caso di una matrice simmetrica definita positiva ha una forma semplificata che non discuteremo derra "fattorizzazione di Cholesky").
+In realtà non c'è un vantaggio sostanziale dal punto di vista del costo computazionale rispetto al calcolo di $$A^tA$$ e all'applicazione del MEG/LU (che in questo caso di una matrice simmetrica definita positiva ha una forma semplificata che non discuteremo detta "fattorizzazione di Cholesky").
 
 Invece c'è un grosso vantaggio dal punto di vista della stabilità perchè si può dimostrare che 
 $$
@@ -275,7 +275,7 @@ $$
 $$
 dove però $$R$$ è condizionata molto meglio di $$A^tA$$.
 
-Si può infatti dimostrare (non lo faremo per i motivi detti sopra parlando di $$k_2(A^tA)$$).
+Si può infatti dimostrare (non lo faremo per i motivi detti sopra parlando di $$k_2(A^tA)$$) che $$k_2(R)=k_2(A)$$.
 
 Per intuirlo, consideriamo di nuovo il caso di $$A$$ quadrata ($$m=n$$) e simmetrica: allora da $$A=QR$$ abbiamo che
 $$
