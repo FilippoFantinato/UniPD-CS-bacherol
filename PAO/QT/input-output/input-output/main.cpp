@@ -14,9 +14,9 @@ void writeJson();
 int main(int argc, char *argv[])
 {
 
-	writeJson();
+//	writeJson();
 
-//	readJson();
+	readJson();
 
 
 
@@ -65,11 +65,12 @@ void readJson()
 	QFile file;
 	file.setFileName(":/data.json");
 	file.open(QFile::ReadOnly | QIODevice::Text);
+
 	val = file.readAll();
 	file.close();
 
 	QJsonObject json = QJsonDocument::fromJson(val.toUtf8()).object();
-	QJsonArray entries = json.value("entries").toArray();
+	QJsonArray entries = json.value("contacts").toArray();
 
 	for(auto it = entries.begin(); it != entries.end(); ++it)
 	{
@@ -77,28 +78,7 @@ void readJson()
 
 //		qWarning() << entry.value("title");
 
-		cout << "Type: " << entry.value("type").toString().toStdString() << ", " << "Title: " << entry.value("title").toString().toStdString() << endl;
+		cout << "Name: " << entry.value("name").toString().toStdString() << ", " << "Lastname: " << entry.value("lastname").toString().toStdString() << " Mail: " << entry.value("mail").toString().toStdString() << endl;
 	}
 
-//	QJsonObject v;
-
-//	v["ciao"] = true;
-
-//	json["AppName"] = v;
-
-//	QJsonObject item = value.toObject();
-//	cout << "Description: " << v["ciao"].toString().toStdString() << endl;
-////	qWarning() << item << endl;
-
-//	/* in case of string value get value and convert into string*/
-////	cout << item["description"].toString().toStdString() << endl;
-//	QJsonValue subobj = item["description"];
-//	cout << subobj.toString().toStdString() << endl;
-
-//	/* in case of array get array and convert into string*/
-////	qWarning() << tr("QJsonObject[appName] of value: ") << item["imp"];
-//	QJsonArray test = item["imp"].toArray();
-
-////	std::cout <<
-////	qWarning() << test[1].toString();
 }
