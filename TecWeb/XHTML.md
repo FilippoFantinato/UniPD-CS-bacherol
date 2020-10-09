@@ -272,7 +272,20 @@ quindi nidificate come scatole cinesi.
 ### Form
 
 ```html
-<form action=“http://server/path/file.cgi" method=“post" >
+<form action=“http://server/path/file.cgi" method=“post|get" >
 	<!– elementi del form -->
 </form>
 ```
+
+Metodo **get**: è il predefinito. Viene utilizzato per leggere
+dati. Il browser allega la stringa di query all’url del
+programma CGI
+
+-   http://server/path/file.cgi?parametro=valore
+-   limite alla lunghezza della stringa
+-   vulnerabilità dell’accesso
+
+Metodo **post**: viene utilizzato per inviare dati. La stringa di
+query viene passata come input standard
+
+-   maggiore facilità di gestione
