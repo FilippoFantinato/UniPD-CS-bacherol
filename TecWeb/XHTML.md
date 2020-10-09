@@ -289,3 +289,74 @@ Metodo **post**: viene utilizzato per inviare dati. La stringa di
 query viene passata come input standard
 
 -   maggiore facilità di gestione
+
+#### Formato della stringa di query
+
+-   Contiene i dati inviati cliccando il pulsante **Submit**
+-   Il nome e il valore di ciascun elemento della form sono
+    codificati come assegnamenti
+-   Con il metodo **get** la pagina di destinazione può essere salvata
+    come bookmark in modo da poter ripetere la query senza
+    reinserire i dati
+-   Se si usa il metodo **get** la stringa viene inserita dal server in
+    una variabile d’ambiente
+-   Se si usa il metodo **post** si deve leggere la stringa di query
+    dall’input standard
+
+#### \<fieldset>\</fieldset> e \<label>\</label>
+
+-   **fieldset**: permette di raggruppare elementi logicamente correlati
+-   **legend**: permette di inserire una intestazione
+-   **label**: associa un’etichetta ad un campo del form (non
+    necessariamente adiacente) con **id** il valore dell’attributo
+    **for**
+
+#### \<Input />
+
+##### Attributi
+
+-   **name**: serve per identificare l’input inviato al server.
+-   **readonly=“readonly”**: i campi con questo attributo non sono
+    editabili dall’utente.
+-   **disabled=“disabled”**: i campi con questo attributo non sono
+    editabili dall’utente.
+
+##### Tag
+
+Questo tag permette da solo di creare diversi elementi di
+una form a seconda del contenuto dell’attributo type:
+
+-   **text**: una singola riga di testo con maxlength elementi
+-   **password**: una riga di testo offuscata
+-   **checkbox**: un semplice on/off
+-   **radio**: per selezionare una o più opzioni
+-   **submit**: pulsante per inviare i dati del modulo
+-   **reset**: pulsante per riportare i valori predefiniti nei campi
+    del modulo
+-   **hidden**: per dati non visibili o non editabili
+-   **file**: per caricare file
+-   **button**: per richiamare script lato client
+-   **image**
+
+#### \<textarea>\</textarea>
+
+Permette all’utente di inserire testo più lungo di una riga.
+
+```html
+<textarea rows="20" cols="40" name="message">
+	scrivi qualcosa qui
+</textarea>
+```
+
+Gli attributi **rows** e **cols** sono obbligatori
+
+#### \<select>\</select>
+
+Permette di creare elenco di dati, in genere visualizzato come menù a tendina, su cui effettuare una o più scelte.
+
+### Cosa non usare
+
+Sono tag che si occupano di aspetti di presentazione o tag non validi:
+
+-   b, i, big, small, marquee, blink, u, tt, sub, sup, center, hr
+-   applet e embed (si deve usare object), font, frame, frameset, iframe
