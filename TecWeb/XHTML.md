@@ -1,5 +1,9 @@
 # XHTML
 
+[TOC]
+
+
+
 ## Sintassi
 
 -   I tag e gli attributi sono case sensitive (tutto in minuscolo)
