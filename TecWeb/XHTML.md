@@ -1,8 +1,17 @@
 # XHTML
 
+<style>
+    .md-toc
+    {
+        position: fixed;
+    }
+    :not(.md-toc)
+    {
+       
+    }
+</style>
+
 [TOC]
-
-
 
 ## Sintassi
 
@@ -364,3 +373,4 @@ Sono tag che si occupano di aspetti di presentazione o tag non validi:
 
 -   b, i, big, small, marquee, blink, u, tt, sub, sup, center, hr
 -   applet e embed (si deve usare object), font, frame, frameset, iframe
+

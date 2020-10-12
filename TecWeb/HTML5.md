@@ -118,4 +118,95 @@ Permettono di definire figure e didascalie
 </figure>
 ```
 
-Un’immagine non ha bisogno dell’attributo **alt** se ha associata una didascalia
+Un’immagine non ha bisogno dell’attributo **alt** se ha associata una didascalia.
+
+Permette anche di specificare se qualche parola è scritta in un'altra lingua.
+
+### \<audio>\</audio>
+
+Permette la riproduzione di file audio in modo nativo
+
+```html
+<audio src=“song.mp3” autoplay loop controls />
+
+<audio controls="controls">
+	<source src="song.ogg" type="audio/ogg" />
+	<source src="song.mp3" type="audio/mp3" />
+	<p>Testo sostitutivo dell’audio.</p>
+</audio>
+```
+
+### \<video>\</video>
+
+Funziona esattamente come **audio**
+
+Da **javascript** si può selezionare il formato del file specifico, da **HTML** il tipo.
+
+```html
+<video width="320" height="240" controls="controls" poster="img.jpg">
+    <source src="movie.mp4" type="video/mp4" />
+    <source src="movie.ogg" type="video/ogg" />
+    <p>Testo alternativo al video.</p>
+</video>
+```
+
+## Lavorare in locale
+
+### Web Storage
+
+Web Storage offre due oggetti che memorizzano i dati sotto forma di coppie <nome, valore>:
+
+-   **sessionStorage**: mantiene i dati solo fino alla chiusura del browser
+-   **localStorage**: mantiene i dati fino allo svuotamento della cache
+
+### Web SQL Database
+
+Database relazionale
+
+### IndexedDB
+
+Si basa su una memorizzazione basata su oggetti indicizzati molto veloce ed efficiente
+
+## Cache manifest
+
+Aiuta lo sviluppo che possono lavorare offline, ovvero senza un costante collegamento alla rete.
+
+Il file **.manifest**, chiamato anche **cache manifest**, elenca le risorse disponibili anche in assenza di connessione alla rete.
+
+La prima riga deve contenere la stringa **CACHE MANIFEST**
+
+Il file è organizzato in sezioni: 
+
+-   **CACHE**: pagine da salvare in cache
+-   **NETWORK**: pagine che necessitano la rete
+-   **FALLBACK**: pagine che necessitano della rete, con la corrispettiva pagina da restituire se non c'è connessione
+
+```html
+CACHE MANIFEST
+
+# versione 0.1
+
+CACHE:
+Risorsa1.html
+Risorsa2.html
+
+NETWORK:
+Aggiorna.cgi
+
+FALLBACK:
+Online.html Offline.html
+/news/* avviso.html
+```
+
+```html
+<!DOCTYPE html>
+<html manifest=“risorsa.manifest”>
+    
+</html>
+```
+
+-   Il **file che contiene** il riferimento al file .manifest viene
+    comunque conservato in locale anche se non presente
+    nel file .manifest
+-   Il file **.manifest** deve essere servito con il tipo **MIME**
+    corretto, ovvero **text/cache-manifest**
