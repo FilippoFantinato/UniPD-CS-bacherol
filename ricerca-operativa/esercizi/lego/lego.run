@@ -1,0 +1,5 @@
+reset;
+model lego.mod;
+option solver cplex;
+solve;
+display xL, xP;

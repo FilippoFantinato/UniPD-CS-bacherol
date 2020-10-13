@@ -1,0 +1,6 @@
+reset;
+model contadino.mod;
+
+option solver cplex;
+solve;
+display xL, xP;
