@@ -7,6 +7,8 @@ cur_time = str(time.time()).encode('ASCII')
 random.seed(cur_time)
 
 msg = input('Your message: ').encode('ASCII')
+print("msg: ", msg)
+print("current time: ", cur_time)
 key = [random.randrange(256) for _ in msg]
 c = [m ^ k for (m,k ) in zip(msg + cur_time, key + [0x88]*len(cur_time))]
 

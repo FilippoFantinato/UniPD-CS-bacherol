@@ -1,27 +1,33 @@
 import random
 import sys
-import time
-import datetime
-import binascii
+import os
 
-bytelist = b""
+def createdTime(msg):
+	c = [m ^ k for (m, k) in zip(msg, ([0x88] * len(msg)))]
 
-with open(sys.argv[1], "rb") as f:
-	byte = f.read(1)
-	while (byte != b""):
-		byte = f.read(1)
-		bytelist = bytelist + byte
+	return bytes(c).decode("ascii", "ignore")
 
-print(bytelist)
 
-cur_time = str(time.mktime(datetime.datetime.strptime("2019-05-06 12:09:38.000000 +0200", "%Y-%m-%d %H:%M:%S.%f %z").timetuple())).encode('ASCII')
-random.seed(cur_time)
+def hack(time, msg):
+	cur_time = str(time).encode('ASCII')
+	random.seed(cur_time)
+	msg = msg[:len(msg) - len(cur_time)]
+	key = [random.randrange(256) for _ in msg]
+	c = [m ^ k for (m,k ) in zip(msg, key + [0x88]*len(cur_time))]
 
-key = [random.randrange(256) for _ in bytelist]
-c = bytes([m ^ k for (m,k) in zip(bytelist, key + [0x88]*len(cur_time))])
+	return bytes(c).decode("ascii")
 
-print(c.decode("ASCII", 'ignore'))
+def main():
+	filename = sys.argv[1]
 
-with open("plain.txt", "w") as f:
-	f.write(c.decode("ASCII", 'ignore'))
-	f.close()
+	with open(filename, "rb") as f:
+		msg = f.read()
+
+		created_time = createdTime(msg)
+		print("Created time: ", created_time)
+
+		plaintext = hack(1513719133.8728752, msg)
+		print("Plain text: ", plaintext)
+
+if __name__ == "__main__":
+	main()
