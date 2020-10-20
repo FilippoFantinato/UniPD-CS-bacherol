@@ -17,6 +17,7 @@ def hack(time, msg):
 
 	return bytes(c).decode("ascii")
 
+
 def main():
 	filename = sys.argv[1]
 
@@ -28,6 +29,7 @@ def main():
 
 		plaintext = hack(1513719133.8728752, msg)
 		print("Plain text: ", plaintext)
+
 
 if __name__ == "__main__":
 	main()
