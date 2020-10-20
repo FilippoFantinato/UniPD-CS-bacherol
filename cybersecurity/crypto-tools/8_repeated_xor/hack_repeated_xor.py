@@ -16,10 +16,10 @@ def getFrequencies(msg, key_length):
 	frequencies = []
 
 	for i in range(0, key_length):
-	    frequency = Counter()
-	    for ch in msg[i::key_length]:
-	        frequency[ch] += 1
-	    frequencies.append(frequency)
+		frequency = Counter()
+		for ch in msg[i::key_length]:
+			frequency[ch] += 1
+		frequencies.append(frequency)
 
 	return frequencies
 
@@ -28,20 +28,24 @@ def getMostCommonCh(frequencies):
 	key_numbers = []
 
 	for frequency in frequencies:
-	    k = ord(frequency.most_common(1)[0][0]) ^ ord(' ')
-	    print ('{k} -> \' \''.format(**locals()))
-	    key_numbers.append(k)
+		k = ord(frequency.most_common(1)[0][0]) ^ ord(' ')
+		print ('{k} -> \' \''.format(**locals()))
+		key_numbers.append(k)
 
-	    others = ''
-	    for val, freq in frequency.most_common(10):
-	        others += chr(ord(val) ^ k) + ' '
-	    print ('Other common letters: {others}\n'.format(**locals()))
+		others = ''
+		for val, freq in frequency.most_common(10):
+			others += chr(ord(val) ^ k) + ' '
+		print ('Other common letters: {others}\n'.format(**locals()))
+
+	return key_numbers
 
 
-def printMaxFrequency(frequencies):
-	for frequency in frequencies:
-		max_value = frequency.most_common(1)[0][0]
-		print(max_value)
+def stringXOR(msg, key):
+	return ''.join([chr(ord(a)^b) for a, b in zip(msg, expandKey(key, len(msg)))])
+
+
+def expandKey(key, length):
+	return (key*(length//len(key) + 1))[:length]
 
 
 def splitText(msg, n):
@@ -49,7 +53,7 @@ def splitText(msg, n):
 	
 
 def main():
-	with open("encrypted.txt", "r") as f:
+	with open("encrypted_ascii.txt", "r") as f:
 		msg = f.read()
 
 		# hexMsg = codecs.decode(msg, "hex")
@@ -62,8 +66,8 @@ def main():
 
 		frequencies = getFrequencies(msg, key_length)
 
-		printMaxFrequency(frequencies)
-		# print(frequencies)
+		key = getMostCommonCh(frequencies)
+		print(stringXOR(msg, key))
 
 		# splitted_text = splitText(msg, possible_length)
 
