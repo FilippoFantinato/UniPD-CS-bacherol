@@ -1,0 +1,9 @@
+reset;
+
+model mixottimo.mod;
+
+data mixottimo.dat;
+option solver cplex;
+solve;
+
+display profitto, x;
