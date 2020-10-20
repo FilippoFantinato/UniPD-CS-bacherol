@@ -30,7 +30,7 @@ His system works as follows:
 	11. XOR the result with Lr
 	12. Use Rr as Lr and your altered Rr (result of previous step) as Rr for any further computation on block i
 	13. increment r
-	
+
 	
 He has encryped a message using Key="Mu", and R=2. See if you can decipher it into plaintext.
 
