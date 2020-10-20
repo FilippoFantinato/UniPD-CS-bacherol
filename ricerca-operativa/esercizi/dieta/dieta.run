@@ -1,0 +1,7 @@
+reset;
+
+model dieta.mod;
+data dieta.dat;
+option solver cplex;
+
+display ;
