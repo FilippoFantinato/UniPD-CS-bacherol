@@ -66,7 +66,7 @@
 -   **autocomplete**
 -   **novalidate**
 
-#### \<input />
+#### Input
 
 Vengono aggiunti i seguenti valori per l'attributo **type**:
 
@@ -107,7 +107,7 @@ Aggiunge al tag **\<ol>** i seguenti attributi
 Inoltre aggiunge al tag **\<li>** l’attributo **value** che consente di
 impostare un numero arbitrario
 
-#### \<figure>\</figure> e \<figcaption>\</figcaption>
+#### Figure e Figurecaption
 
 Permettono di definire figure e didascalie
 
@@ -122,7 +122,7 @@ Un’immagine non ha bisogno dell’attributo **alt** se ha associata una didasc
 
 Permette anche di specificare se qualche parola è scritta in un'altra lingua.
 
-### \<audio>\</audio>
+### Audio
 
 Permette la riproduzione di file audio in modo nativo
 
@@ -136,7 +136,7 @@ Permette la riproduzione di file audio in modo nativo
 </audio>
 ```
 
-### \<video>\</video>
+### Video
 
 Funziona esattamente come **audio**
 

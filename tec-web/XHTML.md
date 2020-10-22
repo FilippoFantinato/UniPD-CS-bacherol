@@ -1,18 +1,5 @@
 # XHTML
 
-<style>
-    .md-toc
-    {
-        position: fixed;
-    }
-    :not(.md-toc)
-    {
-       
-    }
-</style>
-
-[TOC]
-
 ## Sintassi
 
 -   I tag e gli attributi sono case sensitive (tutto in minuscolo)
@@ -89,14 +76,10 @@ Inseriscono informazioni riguardanti il documento ed è possibile creare valori 
 
 I valori attuali sono:
 
--   **description**: breve descrizione dei contenuti della pagina
-    web. È particolarmente utile quando la pagina contiene poco
-    testo
+-   **description**: breve descrizione dei contenuti della pagina web. È particolarmente utile quando la pagina contiene poco testo
 -   **keywords**: lista di parole chiavi separate da una virgola
 -   **copyright**, **author**
--   **robots**: utilizzato per prevenire l’indicizzazione di una
-    pagina. Valori: index, noindex, follow, nofollow (i link della
-    pagina), all, none
+-   **robots**: utilizzato per prevenire l’indicizzazione di una pagina. Valori: index, noindex, follow, nofollow (i link della pagina), all, none
 -   **rating**: classificazione del contenuto
 
 ### Body
@@ -130,34 +113,13 @@ Dare un id ad un elemento permette di usarlo:
 
 Un id deve cominciare con una lettera o con il carattere “_”.
 
-### \<div>\</div>
+### Contenitore generico
 
 L'elemento **\<div>** è un contenitore generico per l'associazione con fogli di style e crea un nuovo blocco. Tutti gli attributi e le associazioni applicate al tag div saranno estese a tutto il blocco di codice interessato.
 
-### \<span>\</span>
+### Contenitore generico in linea
 
 L'elemento \<span> non ha alcuna caratteristica se non quella di fare da supporto per gli stili. Diversamente da div, è un elemento in linea.
-
-### \<p>\</p>
-
-In questo modo si formano dei paragrafi
-
-### \<br />
-
-All’interno dello stesso paragrafo è possibile andare
-a capo con il tag. **\<br />**
-
-### \<hr />
-
-inserisce una linea orizzontale
-
-### \<em>\</em>
-
-Italico
-
-### \<strong>\</strong>
-
-Grassetto
 
 ### Intestazione
 
@@ -173,6 +135,13 @@ Si devono utilizzare rispettando l’ordine e pensando alla struttura del docume
 <h5>Heading 5 (h5)</h5>
 <h6>Heading 6 (h6)</h6>
 ```
+
+### Formattazione del Testo
+
+-   **p**: in questo modo si formano dei paragrafi
+-   **br**: all’interno dello stesso paragrafo è possibile andare a capo con il tag \<**br** />
+-   **em**: italico
+-   **strong**: grassetto
 
 ### Citazione
 
@@ -200,36 +169,39 @@ Si devono utilizzare rispettando l’ordine e pensando alla struttura del docume
 -   **del**: identifica una cancellazione redazionale. Solitamente è
     visualizzata barrata
 
-### \<ul>\</ul> - Elenchi non ordinati
+### Elenchi non ordinati
 
-Elenchi puntati da utilizzare quando vogliamo dei punti per il
-nostro elenco, senza un ordine ben preciso.
-**\<ul>** ogni elemento di lista è compreso all'interno di un
-elemento **\<li>**.
+Elenchi puntati da utilizzare quando vogliamo dei punti per il nostro elenco, senza un ordine ben preciso.
+**\<ul>** ogni elemento di lista è compreso all'interno di un elemento **\<li>**.
 
-### \<li>\</li> - Elenchi ordinati
+### Elenchi ordinati
 
-Elenchi numerati da utilizzare quando vogliamo dei punti che
-abbiano una gerarchia o un ordine ben preciso.
-**\<ol>** ogni elemento di lista è compreso all'interno di un
-elemento **\<li>** (List Item).
+Elenchi numerati da utilizzare quando vogliamo dei punti che abbiano una gerarchia o un ordine ben preciso.
 
-### \<dl>\</dl> - Elenchi di definizioni
+**\<ol>** ogni elemento di lista è compreso all'interno di un elemento **\<li>** (List Item).
+
+### Elenchi di definizioni
 
 Elenchi in cui non si utilizza alcun tipo di punto, utili soprattutto per definire dei termini.
 
-**\<dl>** il termine da definire è indicato dall'elemento **\<dt>** e la definizione dall'elemento **\<dd>**. Ci possono essere più **\<dd>** per un unico **\<dt>** e viceversa.
+**\<dl>** il termine da definire è indicato dall'elemento **\<dt>** e la definizione dall'elemento **\<dd>**. 
 
-### \<img>\</img> - Immagini
+Ci possono essere più **\<dd>** per un unico **\<dt>** e viceversa.
+
+### Immagini
 
 Attributi:
 
--   alt = testo alternativo
--   longdesc = URI ad una pagina con una descrizione
+-   **alt**: testo alternativo
+-   **longdesc**: URI ad una pagina con una descrizione
     dell’immagine 
--   align, hspace, vspace
+-   **align**, hspace, **vspace**
 
-### \<a>\</a> - Link
+```html
+<img src="" alt=""/>
+```
+
+### Link
 
 Sorgente del link può essere un pezzo di testo (hot word) ma anche elementi più complessi come le immagini (thumbnail). Destinazione del link può essere una pagina o una sua parte.
 
@@ -242,27 +214,22 @@ Si possono anche inserire dei link non ipertestuali:
 -   **file**
 -   **news:newsgroup**
 
+```html
+<a href="link">Testo</a>
+```
+
 ### Tabelle
 
-Le tabelle servono per tabulare colonne di dati. Una tabella si crea con il tag **\<table>**. **\<tr>** e **\<td>** indicano,
-rispettivamente, le righe e le colonne. Intere tabelle possono poi
-essere a loro volta contenute in celle di altre tabelle, che vengono
-quindi nidificate come scatole cinesi.
+Le tabelle servono per tabulare colonne di dati. Una tabella si crea con il tag **\<table>**. **\<tr>** e **\<td>** indicano, rispettivamente, le righe e le colonne. Intere tabelle possono poi essere a loro volta contenute in celle di altre tabelle, che vengono quindi nidificate come scatole cinesi.
 
 #### Regole
 
 -   Non ci possono essere righe senza celle al suo interno.
--   Le colonne non si definiscono in modo esplicito ma si
-    definiscono le celle all’interno delle righe tramite gli
-    elementi **td**.
--   Si possono definire celle che occupano più di una colonna
-    (**colspan**) o più di una riga (**rowspan**).
--   È possibile creare delle intestazioni per le colonne (o per le
-    righe) con gli elementi th al posto di **td**.
--   Il tag **caption**, posto subito dopo il tag **table**, permette di
-    inserire un titolo (in genere visualizzato sopra la tabella).
--   L’attributo **summary** permette di descrivere il contenuto
-    della tabella
+-   Le colonne non si definiscono in modo esplicito ma si definiscono le celle all’interno delle righe tramite gli elementi **td**.
+-   Si possono definire celle che occupano più di una colonna (**colspan**) o più di una riga (**rowspan**).
+-   È possibile creare delle intestazioni per le colonne (o per le righe) con gli elementi th al posto di **td**.
+-   Il tag **caption**, posto subito dopo il tag **table**, permette di inserire un titolo (in genere visualizzato sopra la tabella).
+-   L’attributo **summary** permette di descrivere il contenuto della tabella
 
 #### Raggruppare le righe
 
@@ -290,41 +257,31 @@ quindi nidificate come scatole cinesi.
 </form>
 ```
 
-Metodo **get**: è il predefinito. Viene utilizzato per leggere
-dati. Il browser allega la stringa di query all’url del
-programma CGI
+Metodo **get**: è il predefinito. Viene utilizzato per leggere dati. Il browser allega la stringa di query all’url del programma CGI
 
 -   http://server/path/file.cgi?parametro=valore
 -   limite alla lunghezza della stringa
 -   vulnerabilità dell’accesso
 
-Metodo **post**: viene utilizzato per inviare dati. La stringa di
-query viene passata come input standard
+Metodo **post**: viene utilizzato per inviare dati. La stringa di query viene passata come input standard
 
 -   maggiore facilità di gestione
 
 #### Formato della stringa di query
 
 -   Contiene i dati inviati cliccando il pulsante **Submit**
--   Il nome e il valore di ciascun elemento della form sono
-    codificati come assegnamenti
--   Con il metodo **get** la pagina di destinazione può essere salvata
-    come bookmark in modo da poter ripetere la query senza
-    reinserire i dati
--   Se si usa il metodo **get** la stringa viene inserita dal server in
-    una variabile d’ambiente
--   Se si usa il metodo **post** si deve leggere la stringa di query
-    dall’input standard
+-   Il nome e il valore di ciascun elemento della form sono codificati come assegnamenti
+-   Con il metodo **get** la pagina di destinazione può essere salvata come bookmark in modo da poter ripetere la query senza reinserire i dati
+-   Se si usa il metodo **get** la stringa viene inserita dal server in una variabile d’ambiente
+-   Se si usa il metodo **post** si deve leggere la stringa di query dall’input standard
 
-#### \<fieldset>\</fieldset> e \<label>\</label>
+#### Fieldset e Label
 
 -   **fieldset**: permette di raggruppare elementi logicamente correlati
 -   **legend**: permette di inserire una intestazione
--   **label**: associa un’etichetta ad un campo del form (non
-    necessariamente adiacente) con **id** il valore dell’attributo
-    **for**
+-   **label**: associa un’etichetta ad un campo del form (non necessariamente adiacente) con **id** il valore dell’attributo **for**
 
-#### \<Input />
+#### Input
 
 ##### Attributi
 
@@ -334,24 +291,22 @@ query viene passata come input standard
 -   **disabled=“disabled”**: i campi con questo attributo non sono
     editabili dall’utente.
 
-##### Tag
+##### Type
 
-Questo tag permette da solo di creare diversi elementi di
-una form a seconda del contenuto dell’attributo type:
+Questo tag permette da solo di creare diversi elementi di una form a seconda del contenuto dell’attributo type:
 
 -   **text**: una singola riga di testo con maxlength elementi
 -   **password**: una riga di testo offuscata
 -   **checkbox**: un semplice on/off
 -   **radio**: per selezionare una o più opzioni
 -   **submit**: pulsante per inviare i dati del modulo
--   **reset**: pulsante per riportare i valori predefiniti nei campi
-    del modulo
+-   **reset**: pulsante per riportare i valori predefiniti nei campi del modulo
 -   **hidden**: per dati non visibili o non editabili
 -   **file**: per caricare file
 -   **button**: per richiamare script lato client
 -   **image**
 
-#### \<textarea>\</textarea>
+#### Textarea
 
 Permette all’utente di inserire testo più lungo di una riga.
 
@@ -363,7 +318,7 @@ Permette all’utente di inserire testo più lungo di una riga.
 
 Gli attributi **rows** e **cols** sono obbligatori
 
-#### \<select>\</select>
+#### Select
 
 Permette di creare elenco di dati, in genere visualizzato come menù a tendina, su cui effettuare una o più scelte.
 
