@@ -1,4 +1,4 @@
-# CSS
+# CSS 2
 
 ## Sintassi
 
@@ -196,9 +196,36 @@ E' possibile modificare questa caratteristica tramite la proprieta' display
 -   Fa in modo che il box che la contiene prenda avvio da sotto il/i box fluttuante
 
 ```css
-selettore { clear:right/left/both/shape-outside }
+selettore { clear: right/left/both/shape-outside; }
 ```
 
 -   **right/left**: si posiziona dopo tutti i box fluttuanti a destra/sinistra che lo precedono
 -   **both** si posiziona dopo tutti i box fluttuanti che lo precedono
 
+## Stampa
+
+```html
+<link href="corso_tec_print.css" rel="stylesheet" type="text/css" media="print"/>
+```
+
+-   Lasciare solo il testo
+-   Mettere le grazie
+
+### Link
+
+-   Non bisogna per forza rimuoverli, ma si possono stampare con la seguente opzione
+
+```css
+/* CSS 2 */
+a:link:after, a:visited:after 
+{
+	content: " [" attr(href) "] ";
+	font-size:90%;
+}
+
+/* CSS 3 */
+a[href^="/"]:after
+{
+	content: " (http://www.sito.it" attr(href) ") ";
+}
+```
