@@ -127,3 +127,86 @@ Permette di segnalare dei breakpoint e anche sul tipo di dispositivo
 ```
 
 ## Colonne per il testo
+
+```css
+.classe {
+	column-count: 3;
+    column-width: 30%;
+}
+```
+
+## Display Table
+
+-   Si divide la lista in tante liste quante sono le righe
+-   Si definisce una classe per le liste che identificano le righe
+-   Si aggiunge un contenitore che racchiuda tutte le liste
+
+```html
+<div class="wrapper">
+    <ul class="cards">
+        <li> <h2>Card 1</h2> <p>...</p> </li>
+        <li> <h2>Card 2</h2> <p>...</p> </li> ...
+    </ul>
+    <ul class="cards">
+        <li> <h2>Card 1</h2> <p>...</p> </li>
+        <li> <h2>Card 2</h2> <p>...</p> </li> ...
+    </ul>
+</div>
+
+<style>
+.wrapper
+{
+	display: table;
+	border-spacing: 20px;
+	margin: -20px;
+}
+
+.cards
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: table-row;
+}
+
+.cards li 
+{
+	display: table-cell;
+	vertical-align: center;
+	background-color: #fff0f6;
+	border: 1px solid #fcc2d7;
+	padding: 10px;
+	border-radius: 5px;
+}
+</style>
+```
+
+## Flexbox
+
+### Proprietà
+
+- **flex-direction**: direzione degli elementi flex, per righe o per colonne
+- **flex-wrap**: permette di andare a capo
+- **flex-basis**: definisce la larghezza (se flex-direction:row) o l’altezza (se flex-direction:column) di un elemento. Se 0 lo spazio viene distribuito a seconda di flex-grow
+- **flex-grow**: se uguale a >=1 l’elemento può crescere per coprire lo spazio rimasto
+- **flex-shrink**: se uguale a >=1 l’elemento può occupare meno spazio di quello definito inizialmente
+- **flex**: proprietà scorciatoia flex:flex-grow flex-shrink flex-basis
+
+### Allineamento
+
+- **align-items**: dove si allineano i vari elementi (align-self è riferito solo a sè stesso)
+- **flex-start**: top del contenitore
+- **flex-end**: bottom del contenitore center
+- **stretch**: riempie il contenitore
+- **align-content**: richiede flex-wrap: wrap e agisce sull’asse y quando il contenitore è più alto dello spazio richiesto dal contenuto. Valore di default: stretch
+
+## Grid
+
+L’unità di misura utilizzata è **fr**, un’unità di misura creata appositamente per le griglie perché si adatta al layout. È definita come una frazione dello spazio disponibile.
+
+### Proprietà
+
+- **grid-template-columns(/rows/areas)**: permette di definire template per righe/colonne/aree bidimensionali. In pratica si definisce il numero di righe/colonne
+- **align-items**, **align-self**, **justify-items**, **justify-self**: (valore di default stretch)
+- **repeat**, **auto-fill** (numero di colonne in base allo spazio da occupare), **auto-fit** (espande le colonne per riempire tutta la riga)
+
