@@ -135,4 +135,3 @@ Si cambia il programma, dopo aver capito cosa fa
 2. Usare un disassembler per trovare le istruzioni da patchare
 3. Trovare il binario delle istruzioni hex
 4. Modifica e salva
-
