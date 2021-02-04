@@ -96,7 +96,7 @@ public class ServerSocket implements Closeable
 }
 ```
 
-## Datagram
+## Datagrams
 
 ```java
 package java.net;
@@ -174,6 +174,8 @@ public class DatagramSocket
     public void send(DatagramPacket p) throws IOException;
     
     /**
+    * blocca fino alla ricezione del messaggio. Se il messaggio è più lungo del buffer, viene troncato.
+    *
     * Receives a datagram packet from this socket. When this
     * method returns, the DatagramPacket's buffer is filled
     * with the data received. The datagram packet also
@@ -212,12 +214,14 @@ public final class URL
     public URL(String spec) throws MalformedURLException;
     
     /**
+    * GET
     * Opens a connection to this URL and returns an
     * InputStream for reading from that connection.
     **/
     public InputStream openStream() throws IOException;
     
     /**
+    * POST
     * Returns a URLConnection instance that represents a
     * connection to the remote object referred to by the URL.
     **/
