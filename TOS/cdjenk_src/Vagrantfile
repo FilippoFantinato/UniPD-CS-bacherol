@@ -1,0 +1,47 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# All Vagrant configuration is done below. The "2" in Vagrant.configure
+# configures the configuration version (we support older styles for
+# backwards compatibility). Please don't change it unless you know what
+# you're doing.
+Vagrant.configure("2") do |config|
+  # The most common configuration options are documented and commented below.
+  # For a complete reference, please see the online documentation at
+  # https://docs.vagrantup.com.
+
+  # Every Vagrant development environment requires a box. You can search for
+  # boxes at https://vagrantcloud.com/search.
+  config.vm.box = "dduportal/alpine2docker"
+
+  config.ssh.username = "alpine"
+  config.ssh.shell = "bash -l"
+
+  config.vm.provider "virtualbox" do |vm, override|
+
+    # Custom VM configuration
+    vm.customize ["modifyvm", :id, "--memory", "4096"]
+    vm.customize ["modifyvm", :id, "--cpus", "2"]
+    vm.customize ["modifyvm", :id, "--cableconnected1", "on"]
+    vm.customize ["modifyvm", :id, "--audio", "none"]
+    vm.customize ["modifyvm", :id, "--usb", "off"]
+    # For secured workstations
+    vm.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+
+    # Port forwarding
+    if ENV["EXTERNAL_PORT"]
+        override.vm.network "forwarded_port", guest: ENV["EXTERNAL_PORT"], host: ENV["EXTERNAL_PORT"], id: "http"
+        config.vm.provision "shell", inline: "sed -i s/EXTERNAL_PORT=.*$/EXTERNAL_PORT=/" +
+            ENV["EXTERNAL_PORT"] + " /var/customize/.env"
+    else
+        override.vm.network "forwarded_port", guest: 80, host: 80, auto_correct: true, id: "http"
+    end
+    override.vm.network "forwarded_port", guest: 30000, host: 30000, auto_correct: true, id: "http2"
+    override.vm.network "forwarded_port", guest: 30001, host: 30001, auto_correct: true, id: "http3"
+    override.vm.network "forwarded_port", guest: 20000, host: 20000, auto_correct: true, id: "http4"
+    # No FS share to allow any depds to the host
+    config.vm.synced_folder ".", "/vagrant", disabled: true
+    # config.proxy.enabled = false
+  end
+
+end

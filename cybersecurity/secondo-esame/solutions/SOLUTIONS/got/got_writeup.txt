@@ -1,0 +1,4 @@
+Ho controllato con checksec e gdb che flags di sicurezza erano attivi
+Poi ho provato ad eseguire il programma e ho visto che consigliava questo: "If you did it correctly, you should see the True Ending:"
+Aprendo ida ho visto che la funzione "show_true_ending" non era mai chiamata, cosi' ho scritto uno script in python utilizzando pwntools che invia al programma in esecuzione, attraverso la funzione ELF presente in pwn, l'indirizzo della funzione "exit" preso dalla GOT (quello da sovrascrivere), immediatamente dopo la stringa "something?", e l'indirizzo alla funzione "show_true_ending" (quello da scrivere), immediatamente dopo la stringa "write?", trovando cosi' il flag
+

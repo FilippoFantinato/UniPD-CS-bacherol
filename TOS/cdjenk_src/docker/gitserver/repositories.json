@@ -1,0 +1,22 @@
+{
+  "repositories": [
+    {
+      "name": "demoapp",
+      "url": "https://github.com/nicolabertazzo/dw-demo-app",
+      "visibility": "public",
+      "webhook_url": "http://jenkins:8080/jenkins/git/notifyCommit?url=ssh://git@gitserver:5022/butler/demoapp.git"
+    },
+    {
+      "name": "pipeline-libraries",
+      "url": "https://github.com/oufti-playground/pipeline-libraries",
+      "visibility": "public",
+      "webhook_url": "none"
+    },
+    {
+      "name": "flaskr",
+      "url": "https://github.com/nicolabertazzo/flaskr",
+      "visibility": "public",
+      "webhook_url": "http://jenkins:8080/jenkins/git/notifyCommit?url=ssh://git@gitserver:5022/butler/flaskr.git"
+    }
+  ]
+}

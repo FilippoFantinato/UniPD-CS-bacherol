@@ -1,0 +1,11 @@
+Dopo aver eseguito il programma ho provato a debuggarlo, ma c'era un controllo per vedere se si stava utilizzando un debugger.
+Cosi' ho copiato il programma nel file "p_freezeTime_1218816" e ho aperto quest'ultimo con radare2 in modalita' scrittura, eseguito l'analisi (aaaaaa) e printato tutto le funzione con afl.
+Dopo aver notato che c'era la funzione is_policeman_here, l'ho printata e, dato che r2 dice dove viene chiamata una funzione "; CALL XREF from 0x00401eef (sym.steal_diamond)", ho printato con "pdf @ steal_diamond" anche steal_diamond. Dalla funzione steal_diamond ho individuato la chiamata di is_policeman_here, mi ci sono posizionato con seek (s) e l'ho sovrascritta con delle nop, 
+in questo modo "wa nop;nop;nop;nop;nop".
+
+Cosi' facendo ho tolto via di mezzo il controllo sulla presenza di un debugger e ho aperto freezeTime con gdb.
+Ho disassemblato il main con "disas main" e ho messo un breakpoint (b *0x0000000000402129) nell'istruzione prima della chiamata al metodo delete_message, sempre presente dentro il main ed individuato con ida.
+Analizzando il metodo delete_message con ida, si puo' notare che utilizza due registri: rdi e rax, quindi in uno di questi ci dovra' essere la flag.
+L'istruzione prima della chiamata al metodo delete_message, dove ho messo un breakpoint, esegue un mov del registro rax in rdi, quindi la flag si trovera' in rax.
+Eseguo il programma con il debugger, premo invio le volte necessarie e arrivo al breakpoint.
+A questo punto controllo la memoria del registro rax con "x/s $rax" ed e' uscita la flag

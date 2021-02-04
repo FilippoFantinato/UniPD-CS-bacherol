@@ -1,0 +1,10 @@
+Ho utilizzato il comando strings per cercare tutti i TIP, in questo modo:
+- strings honeydex_1218816 | grep TIP
+
+In seguito ho letto questo "TIP: Really need a MIRROR?" e cosi' ho eseguito questo comando:
+- strings honeydex_1218816 | grep ZTIRPS
+
+Trovando in questo modo la flag rovesciata.
+
+Poi con uno script in python che ho fatto l'ho girata
+

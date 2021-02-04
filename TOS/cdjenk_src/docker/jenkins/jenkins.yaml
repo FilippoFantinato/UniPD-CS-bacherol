@@ -1,0 +1,141 @@
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+          - basicSSHUserPrivateKey:
+              scope: SYSTEM
+              id: ssh-nodes-key
+              username: jenkins
+              description: "SSH Key for the Agents."
+              privateKeySource:
+                directEntry:
+                  privateKey: ${agent_private_key}
+jenkins:
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  remotingSecurity:
+    enabled: true
+  authorizationStrategy: 
+    globalMatrix:
+      grantedPermissions:
+        - Overall/Read:anonymous
+        - Job/Read:anonymous
+        - View/Read:anonymous
+        - Overall/Administer:${JENKINS_ADMIN}
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  labelAtoms:
+  - name: "docker"
+  - name: "docker-node"
+  - name: "master"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  nodes:
+  - permanent:
+      labelString: "docker"
+      launcher:
+        sSHLauncher:
+          credentialsId: "ssh-nodes-key"
+          host: "jenkins-maven-jdk8-node"
+          javaPath: "/usr/lib/jvm/java-1.8-openjdk/bin/java"
+          jvmOptions: "-XshowSettings:vm"
+          launchTimeoutSeconds: 15
+          maxNumRetries: 3
+          port: 22
+          retryWaitTime: 5
+          sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
+      name: "docker-node"
+      nodeDescription: "Node for running Docker workloads"
+      nodeProperties:
+      - envVars:
+          env:
+          - key: "JAVA_HOME"
+            value: "/usr/lib/jvm/java-1.8-openjdk"
+      numExecutors: 4
+      remoteFS: "/home/jenkins"
+      userId: "SYSTEM"
+  - permanent:
+      labelString: "deploy production"
+      launcher:
+        sSHLauncher:
+          credentialsId: "ssh-nodes-key"
+          host: "jenkins-production-node"
+          javaPath: "/usr/lib/jvm/java-1.8-openjdk/bin/java"
+          jvmOptions: "-XshowSettings:vm"
+          launchTimeoutSeconds: 15
+          maxNumRetries: 3
+          port: 22
+          retryWaitTime: 5
+          sshHostKeyVerificationStrategy: "nonVerifyingKeyVerificationStrategy"
+      mode: EXCLUSIVE
+      name: "production-node"
+      nodeDescription: "Node for production deployment, and Docker Workloads"
+      nodeProperties:
+      - envVars:
+          env:
+          - key: "DOCKER_HOST"
+            value: "unix:///var/run/docker.sock"
+          - key: "JAVA_HOME"
+            value: "/usr/lib/jvm/java-1.8-openjdk"
+      numExecutors: 1
+      remoteFS: "/home/jenkins"
+      userId: "SYSTEM"
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: false
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "${JENKINS_ADMIN}"
+        password: "${JENKINS_ADMIN}"
+        properties:
+        - favoriting:
+            autofavoriteEnabled: true
+        - "favorite"
+        - "timezone"
+        - "myView"
+        - preferredProvider:
+            providerId: "default"
+        - "apiToken"
+        - mailer:
+            emailAddress: "butler@eng.it"
+  slaveAgentPort: 50000
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
+  views:
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  sSHD:
+    port: -1
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  maven:
+    installations:
+    - name: "maven"
+      properties:
+      - installSource:
+          installers:
+          - maven:
+              id: "3.3.9"
