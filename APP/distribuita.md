@@ -270,6 +270,11 @@ public interface Channel extends Closeable
 
 ## NetworkChannel
 
+Un NetworkChannel rappresenta una comunicazione su di una rete. Può:
+
+*   esssere legato (con l'operazione bind) ad un'indirizzo
+*   dichiarare le opzioni che supporta.
+
 ```java
 /**
 * A channel to a network socket.
@@ -282,6 +287,8 @@ public interface NetworkChannel extends Closeable
 ```
 
 ## AsynchronousServerSocketChannel
+
+Un AsynchronousServerSocketChannel è un canale asincrono basato su di una server socket. Ci permette, in modo asincrono, di accettare connessioni e gestirle.
 
 ```java
 /**
@@ -339,8 +346,7 @@ implements AsynchronousChannel, NetworkChannel
     *
     * @return a Future object representing the pending result
     **/
-    public abstract Future< AsynchronousSocketChannel >
-    accept();
+    public abstract Future< AsynchronousSocketChannel > accept();
     
     /**
     * (from AsynchronousSocketChannel)
@@ -368,6 +374,18 @@ implements AsynchronousChannel, NetworkChannel
 
 ## CompletionHandler
 
+CompletionHandler è l'interfaccia che deve implementare un oggetto che gestisce la ricezione di un'operazione di I/O asincrona. Essendo la modalità asincrona, questa interfaccia ci permette di indicare al sistema l'azione da effettuare al completamento della successiva interazione.
+
+Implementando un CompletionHandler possiamo esprimere il comportamento del server alla prossima interazione, in maniera asincrona.
+
+Il parametro generico attachment ci permette di far circolare le informazioni di contesto riguardo allo stato della conversazione.
+
+Vari handler potrebbero essere chiamati da Thread diversi, in momenti imprevedibili; da qui la necessità di gestire esplicitamente il passaggio del contesto.
+
+La gestione delle operazioni di I/O richiede quindi di pecificare sempre l'attachment da far circolare ed il CompletitionHandler che gestisce il completamento.
+
+Un'alternativa all'uso di un CompletionHandler è data dalla versione dei metodi che ritorna un Future.La principale differenza è che in questo caso, se il blocco di codice è unico per tutta la conversazione, il thread che la gestisce è unico e rimane allocato per l'intera durata della conversazione.
+
 ```java
 /**
 * A handler for consuming the result of an asynchronous
@@ -380,6 +398,10 @@ implements AsynchronousChannel, NetworkChannel
 interface CompletionHandler< V,A >
 {
     /**
+    * Il compito del metodo completed è gestire l'interazione 
+    * relativa ai dati ricevuti, ed eventualmente 
+    * predisporre l'operazione successiva.
+    *
     * Invoked when an operation has completed.
     *
     * @param result The result of the I/O operation
@@ -389,6 +411,9 @@ interface CompletionHandler< V,A >
     void completed(V result, A attachment);
     
     /**
+    * Il compito del metodo failed è, ovviamente, gestire 
+    * il caso in cui un'interazione ha incontrato una eccezione.
+    * 
     * Invoked when an operation fails.
     *
     * @param exc The exception to indicate why the I/O
