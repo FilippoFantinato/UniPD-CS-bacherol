@@ -1,4 +1,4 @@
-# Concorrenza
+# Programmazione concorrente
 
 ## Thread
 
@@ -241,7 +241,7 @@ In mancanza di queste l'implementazione ripiega su metodi più convenzionali (me
 
 ## Concurrent data structures
 
-### CONCURRENTMAP
+### ConcurrentMap
 
 ```java
 /**

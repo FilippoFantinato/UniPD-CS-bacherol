@@ -1,4 +1,4 @@
-# Distribuita
+# Programmazione distribuita
 
 ## Sockets
 

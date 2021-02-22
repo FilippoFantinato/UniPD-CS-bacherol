@@ -80,7 +80,7 @@ Non c'è fall-through. L'elenco dei casi deve essere esaustivo.
 
 Permette di dichiarare delle variabili. queste devono implementare l'interfaccia AutoClosable, e verranno automaticamente , e con certezza, "chiuse". In questa forma le clausole catch e finally sono entrambe opzionali.
 
-## Stream
+## Streams
 
 A molto interfacce è stato aggiunto il metodo stream() che permette di trattare le collezioni con questa metafora.
 

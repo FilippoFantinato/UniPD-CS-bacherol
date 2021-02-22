@@ -50,10 +50,7 @@ public interface Subscription
     public void cancel();
 }
 
-public interface Processor< T, R >
-{
-    extends Subscriber< T >, Publisher< R > {
-}
+public interface Processor< T, R > extends Subscriber< T >, Publisher< R >;
 ```
 
 ## Operatori
