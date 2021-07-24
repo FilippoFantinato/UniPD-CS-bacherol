@@ -1,0 +1,26 @@
+set Prodotti := lattuga patata;
+set Risorse := ettari semi tuberi concime;
+
+param P := 
+  lattuga 3000
+  patata 5000;
+
+param Q := 
+  ettari 11 
+  semi 70 
+  tuberi 18 
+  concime 145
+  ;
+
+param A := 
+  lattuga ettari 1
+  lattuga semi 7
+  lattuga tuberi 0
+  lattuga concime 10
+  patata ettari 1
+  patata semi 0
+  patata tuberi 3
+  patata concime 20
+  ;
+
+param MaxProduzione := 1000;

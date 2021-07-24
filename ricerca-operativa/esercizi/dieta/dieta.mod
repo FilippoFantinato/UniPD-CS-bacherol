@@ -1,10 +1,8 @@
-set Risorse;
-set Domande;
+set domande;
+set risorse;
 
-param C {Risorse};
-param D {Domande};
-param A {Risorse, Domande};
+param costo{risorse};
+param quantita{domande};
+param capacita{risorse}
 
-minimize minimo:
-    sum{i in C} Var[i]
-;
+minimize 

@@ -1,0 +1,7 @@
+reset;
+option solver cplex;
+model telecomandi.mod;
+data telecomandi.dat;
+solve;
+display z;
+display xA, xB;

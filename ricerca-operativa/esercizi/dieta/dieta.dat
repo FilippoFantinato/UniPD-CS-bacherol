@@ -1,6 +1,0 @@
-set Risorse := Carne Verdura frutta;
-set Domande := 
-    Proteine 20
-    Ferro 30
-    Calcio 10
-;
