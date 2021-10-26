@@ -1,4 +1,0 @@
-/home/filippofantinato/Desktop/UniPD/PAO/QT/MyWidget/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/filippofantinato/Desktop/UniPD/PAO/QT/MyWidget/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/filippofantinato/Desktop/UniPD/PAO/QT/MyWidget/cmake-build-debug/CMakeFiles/MyWidget.dir
-/home/filippofantinato/Desktop/UniPD/PAO/QT/MyWidget/cmake-build-debug/CMakeFiles/MyWidget_autogen.dir
